@@ -3,7 +3,7 @@ import react from "@vitejs/plugin-react";
 
 export default defineConfig({
   plugins: [react()],
-  base: "/jaszcawil.github.io",
+  base: "/",
 
   esbuild: {
     loader: 'jsx'
