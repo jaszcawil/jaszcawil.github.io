@@ -1,3 +1,5 @@
+let currentTimeout = 2100;
+
 // About section entrance
 const aboutEntrance = (aboutTitle, aboutDescription, aboutStatus, aboutSocials, aboutImage, aboutSection) => {
     aboutTitle.classList.remove('bounce-out-left');
@@ -29,7 +31,8 @@ const aboutExit = (aboutTitle, aboutDescription, aboutStatus, aboutSocials, abou
     aboutSocials.classList.add('bounce-out-left-d1500ms');
     aboutImage.classList.add('bounce-out-right-d1500ms');
 
-    aboutSection.classList.remove('active');
+    
+    setTimeout(() => aboutSection.classList.remove('active'), currentTimeout);
 }
 
 // Skill section entrance
@@ -86,8 +89,8 @@ const skillExit = (skillDescription, skillHTML, skillCSS, skillJS, skillJQuery, 
     skillSEO.classList.add('bounce-out-bottom-d1000ms');
     skillOpt.classList.add('bounce-out-bottom-d500ms');
     skillAcc.classList.add('bounce-out-bottom');
-
-    skillSection.classList.remove('active');
+    
+    setTimeout(() => skillSection.classList.remove('active'), currentTimeout);
 }
 
 // Experience section entrance
@@ -108,8 +111,8 @@ const experienceExit = (experienceDescription, experienceList, experienceSection
 
     experienceDescription.classList.add('tracking-out-contract');
     experienceList.classList.add('bounce-out-bottom');
-
-    experienceSection.classList.remove('active');
+    
+    setTimeout(() => experienceSection.classList.remove('active'), currentTimeout);
 }
 
 // Contact section entrance
@@ -146,13 +149,12 @@ const contactExit = (contactDescription, contactEmail, contactTel, contactOtherD
     contactOtherDesc.classList.add('bounce-out-bottom-d1000ms');
     contactLinkedIn.classList.add('bounce-out-bottom-d500ms');
     contactGit.classList.add('bounce-out-bottom');
-
-    contactSection.classList.add('active');
+    
+    setTimeout(() => contactSection.classList.remove('active'), currentTimeout);
 }
 
 // Menu link
 let currentName = 'About';
-let currentTimeout = 2100;
 
 const menuClick = (thisButton, name = 'About') => {
     // Section variables
@@ -225,8 +227,6 @@ const menuClick = (thisButton, name = 'About') => {
         aboutExit(aboutTitle, aboutDescription, aboutStatus, aboutSocials, aboutImage, aboutSection);
 
         currentTimeout = 2100;
-
-        menuButtons();
     } else if (currentName == 'Skills') {
         skillExit(skillDescription, skillHTML, skillCSS, skillJS, skillJQuery, skillWP, skillFigma, skillGit, skillSEO, skillOpt, skillAcc, skillSection);
 
@@ -237,14 +237,10 @@ const menuClick = (thisButton, name = 'About') => {
         experienceExit(experienceDescription, experienceList, experienceSection);
 
         currentTimeout = 500;
-
-        menuButtons();
     } else if (currentName == 'Contact') {
         contactExit(contactDescription, contactEmail, contactTel, contactOtherDesc, contactLinkedIn, contactGit, contactSection);
 
         currentTimeout = 2100;
-
-        menuButtons();
     }
 
     if (currentName == name) {
