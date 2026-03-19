@@ -1,5 +1,5 @@
 body {
-    background-color: var(--color-dark-default);
+    background: var(--color-dark-default) url('../images/dark/background.png') no-repeat center 380px;
     color: var(--text-light-default);
 }
 
@@ -51,18 +51,9 @@ a {
         display: flex;
         justify-content: space-between;
         align-items: center;
-        flex-direction: column;
-        max-width: 1280px;
+        max-width: 1440px;
         margin: auto;
         padding: 16px;
-    }
-
-    .logo {
-        margin-bottom: 32px;
-    }
-
-    .logo a {
-        font-size: 32px;
     }
 
     .menu,
@@ -74,65 +65,31 @@ a {
         column-gap: 24px;
     }
 
-    .menu__first {
-        padding-bottom: 24px;
-    }
-
-    .menu__icon {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        margin: auto;
-        padding: 8px 16px;
-        background-color: var(--color-dark-600);
-        border-radius: 8px;
-    }
-
-    .menu__icon img {
-        width: 40px;
-        height: 40px;
-    }
-
-    .menu__text-wrapper {
-        position: absolute;
-        top: -16px;
-        left: -24px;
-    }
-
-    .menu__text {
-        display: flex;
-        justify-content: center;
-        width: 100%;
-        transform: rotate(-45deg);
-    }
-
-    .menu__text span {
-        padding: 4px 8px;
-        background-color: var(--color-dark-600);
-        text-align: center;
-        border-radius: 4px;
-        border: 1px solid var(--color-dark-200);
-    }
-
     .menu__link--theme-changer svg path {
         stroke: #D1D5DB;
     }
 
     .menu__item-button {
         position: relative;
-        font-size: var(--body-text-size);
+        font-size: 18px;
+        color: var(--color-dark-600);
     }
 
-    .menu__item-button .menu__text-wrapper {
-        transform: rotateX(-100deg);
-        opacity: 0;
-        transform-origin: 36px 0px;
+    .menu__item-button.active,
+    .menu__item-button:hover {
+        color: var(--color-purple);
     }
 
-    .menu__item-button.active .menu__text-wrapper {
-        transform: rotateX(0deg) !important;
-        opacity: 1 !important;
-        transform-origin: 36px 0px !important;
+    .social-links {
+        display: flex;
+        column-gap: 8px;
+    }
+
+    .social-links__item {
+        background-color: var(--color-dark-950);
+        color: var(--color-dark-default);
+        font-size: 32px;
+        border-radius: 8px;
     }
 }
 
@@ -146,6 +103,9 @@ a {
         position: relative;
         width: 100%;
         height: 100vh;
+        max-width: 1440px;
+        margin: auto;
+        padding: 16px;
     }
 
     .content {
@@ -176,10 +136,6 @@ a {
         flex-direction: column;
         justify-content: center;
         width: 75%;
-    }
-
-    .about__right {
-        width: 25%;
     }
 
     .about__title {
@@ -321,9 +277,6 @@ a {
 
     .experience__list::-webkit-scrollbar {
         width: 6px;
-    }
-
-    .experience__list:hover::-webkit-scrollbar {
     }
     
     .experience__list::-webkit-scrollbar-track {

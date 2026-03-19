@@ -31,6 +31,7 @@
     --color-light-950: #030712;
 
     --color-emerald: #10b981;
+    --color-purple: #fa6dfa;
 
     /* Text Colors */
     --text-light-default: #ffffff;
@@ -99,6 +100,10 @@ body {
 
 a {
     text-decoration: none;
+}
+
+a:hover {
+    color: var(--color-purple);
 }
 
 h1 {
