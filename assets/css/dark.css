@@ -21,11 +21,7 @@ a {
 }
 
 /* Header */
-@media (min-width: 768px) and (max-width: 1024px) {
-    
-}
-
-@media (min-width: 1024px) {
+@media (min-width: 768px) {
     .header-wrapper {
         z-index: 100;
         position: fixed;
@@ -34,19 +30,6 @@ a {
         width: 100%;
         background-color: var(--color-dark-default)
     }
-
-    /* header {
-        z-index: 1000;
-        top: 0;
-        left: 0;
-        position: fixed;
-        display: flex;
-        justify-content: center;
-        width: 200px;
-        height: 100vh;
-        background-color: var(--color-dark-default);
-        border-right: 1px solid var(--color-dark-100);
-    } */
 
     .header {
         display: flex;
@@ -94,12 +77,11 @@ a {
     }
 }
 
-/* Main Content */
-@media (min-width: 768px) and (max-width: 1024px) {
-    
+@media (min-width: 1024px) {
 }
 
-@media (min-width: 1024px) {
+/* Main Content */
+@media (min-width: 768px) {
     .main-content {
         position: relative;
         width: 100%;
@@ -126,12 +108,11 @@ a {
     }
 }
 
-/* About */
-@media (min-width: 768px) and (max-width: 1024px) {
-    
+@media (min-width: 1024px) {
 }
 
-@media (min-width: 1024px) {
+/* About */
+@media (min-width: 768px) {
     .about__left {
         display: flex;
         flex-direction: column;
@@ -194,12 +175,11 @@ a {
     }
 }
 
-/* Skills */
-@media (min-width: 768px) and (max-width: 1024px) {
-    
+@media (min-width: 1024px) {
 }
 
-@media (min-width: 1024px) {
+/* Skills */
+@media (min-width: 768px) {
     .content.skills {
         flex-direction: column;
         justify-content: center;
@@ -249,12 +229,12 @@ a {
     }
 }
 
-/* Experience */
-@media (min-width: 768px) and (max-width: 1024px) {
+@media (min-width: 1024px) {
     
 }
 
-@media (min-width: 1024px) {
+/* Experience */
+@media (min-width: 768px) {
     .content.experience {
         flex-direction: column;
         justify-content: center;
@@ -356,12 +336,12 @@ a {
     }
 }
 
-/* Contact */
-@media (min-width: 768px) and (max-width: 1024px) {
+@media (min-width: 1024px) {
     
 }
 
-@media (min-width: 1024px) {
+/* Contact */
+@media (min-width: 768px) {
     .content.contact {
         flex-direction: column;
         justify-content: center;
@@ -371,6 +351,7 @@ a {
     .contact__description {
         margin-bottom: 80px;
         font-size: 24px;
+        text-align: center;
     }
 
     .contact__detail {
@@ -398,4 +379,8 @@ a {
         column-gap: 24px;
         margin-top: 16px;
     }
+}
+
+@media (min-width: 1024px) {
+    
 }
