@@ -116,39 +116,35 @@ const experienceExit = (experienceDescription, experienceList, experienceSection
 }
 
 // Contact section entrance
-const contactEntrance = (contactDescription, contactEmail, contactTel, contactOtherDesc, contactLinkedIn, contactGit, contactSection) => {
+const contactEntrance = (contactDescription, contactEmail, contactTel, contactOtherDesc, contactSocials, contactSection) => {
     contactDescription.classList.remove('tracking-out-contract');
     contactEmail.classList.remove('bounce-out-bottom-d2000ms');
     contactTel.classList.remove('bounce-out-bottom-d1500ms');
     contactOtherDesc.classList.remove('bounce-out-bottom-d1000ms');
-    contactLinkedIn.classList.remove('bounce-out-bottom-d500ms');
-    contactGit.classList.remove('bounce-out-bottom');
+    contactSocials.classList.remove('bounce-out-bottom-d1500ms');
 
     contactDescription.classList.add('tracking-in-expand');
     contactEmail.classList.add('bounce-in-bottom');
     contactTel.classList.add('bounce-in-bottom-d500ms');
     contactOtherDesc.classList.add('bounce-in-bottom-d1000ms');
-    contactLinkedIn.classList.add('bounce-in-bottom-d1500ms');
-    contactGit.classList.add('bounce-in-bottom-d2000ms');
+    contactSocials.classList.add('bounce-in-bottom-d1500ms');
 
     contactSection.classList.add('active');
 }
 
 // Contact section entrance
-const contactExit = (contactDescription, contactEmail, contactTel, contactOtherDesc, contactLinkedIn, contactGit, contactSection) => {
+const contactExit = (contactDescription, contactEmail, contactTel, contactOtherDesc, contactSocials, contactSection) => {
     contactDescription.classList.remove('tracking-in-expand');
     contactEmail.classList.remove('bounce-in-bottom');
     contactTel.classList.remove('bounce-in-bottom-d500ms');
     contactOtherDesc.classList.remove('bounce-in-bottom-d1000ms');
-    contactLinkedIn.classList.remove('bounce-in-bottom-d1500ms');
-    contactGit.classList.remove('bounce-in-bottom-d2000ms');
+    contactSocials.classList.remove('bounce-in-bottom-d1500ms');
 
     contactDescription.classList.add('tracking-out-contract');
     contactEmail.classList.add('bounce-out-bottom-d2000ms');
     contactTel.classList.add('bounce-out-bottom-d1500ms');
     contactOtherDesc.classList.add('bounce-out-bottom-d1000ms');
-    contactLinkedIn.classList.add('bounce-out-bottom-d500ms');
-    contactGit.classList.add('bounce-out-bottom');
+    contactSocials.classList.add('bounce-out-bottom-d1500ms');
     
     setTimeout(() => contactSection.classList.remove('active'), currentTimeout);
 }
@@ -193,8 +189,20 @@ const menuClick = (thisButton, name = 'About') => {
     const contactEmail = document.getElementById('eContactEmail');
     const contactTel = document.getElementById('eContactTel');
     const contactOtherDesc = document.getElementById('eContactOtherDesc');
-    const contactLinkedIn = document.getElementById('eContactLinkedIn');
-    const contactGit = document.getElementById('eContactGit');
+    const contactSocials = document.getElementById('eContactSocials');
+
+    // Get content height 
+    let viewportWidth = window.innerWidth || document.documentElement.clientWidth;
+
+    const getContentHeight = (content) => {
+        if (viewportWidth <= 768) {
+            // console.log(content.offsetHeight);
+            // console.log(viewportWidth);
+            // document.body.style.height = content.offsetHeight + 'px';
+        } else {
+            return false;
+        } 
+    }
 
     const allSections = () => {
         mainContentSection.forEach((elements) => {
@@ -238,7 +246,7 @@ const menuClick = (thisButton, name = 'About') => {
 
         currentTimeout = 500;
     } else if (currentName == 'Contact') {
-        contactExit(contactDescription, contactEmail, contactTel, contactOtherDesc, contactLinkedIn, contactGit, contactSection);
+        contactExit(contactDescription, contactEmail, contactTel, contactOtherDesc, contactSocials, contactSection);
 
         currentTimeout = 2100;
     }
@@ -256,6 +264,8 @@ const menuClick = (thisButton, name = 'About') => {
             aboutEntrance(aboutTitle, aboutDescription, aboutStatus, aboutSocials, aboutImage, aboutSection);
 
             menuButtons();
+
+            getContentHeight(aboutSection);
         }, currentTimeout);
     } else if (name == 'Skills') {
         setTimeout(() => {
@@ -266,6 +276,8 @@ const menuClick = (thisButton, name = 'About') => {
             skillEntrance(skillDescription, skillHTML, skillCSS, skillJS, skillJQuery, skillWP, skillFigma, skillGit, skillSEO, skillOpt, skillAcc, skillSection);
 
             menuButtons();
+
+            getContentHeight(skillSection);
         }, currentTimeout);
     } else if (name == 'Experience') {
         setTimeout(() => {
@@ -276,6 +288,8 @@ const menuClick = (thisButton, name = 'About') => {
             experienceEntrance(experienceDescription, experienceList, experienceSection);
 
             menuButtons();
+
+            getContentHeight(experienceSection);
         }, currentTimeout);
     } else if (name == 'Contact') {
         setTimeout(() => {
@@ -283,9 +297,11 @@ const menuClick = (thisButton, name = 'About') => {
             contactSection.classList.remove('inactive');
             contactSection.classList.add('active');
             
-            contactEntrance(contactDescription, contactEmail, contactTel, contactOtherDesc, contactLinkedIn, contactGit, contactSection);
+            contactEntrance(contactDescription, contactEmail, contactTel, contactOtherDesc, contactSocials, contactSection);
 
             menuButtons();
+
+            getContentHeight(contactSection);
         }, currentTimeout);
     }
     
