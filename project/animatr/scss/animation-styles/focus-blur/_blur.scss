@@ -1,0 +1,27 @@
+/**
+ *
+ * blur class
+ *
+*/
+.jaszanimatr__text-blur {
+  animation: text-blur 0.4s cubic-bezier(0.55, 0.085, 0.68, 0.53) both;
+}
+
+/**
+ *
+ * animation blur
+ *
+*/
+@keyframes text-blur {
+  0% {
+    filter: blur(0);
+    opacity: 1;
+    visibility: visible;
+  }
+
+  100% {
+    filter: blur(5px);
+    opacity: 0;
+    visibility: hidden;
+  }
+}

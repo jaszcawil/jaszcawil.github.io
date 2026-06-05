@@ -1,0 +1,92 @@
+/**
+ *
+ * slide-out class
+ *
+*/
+.jaszanimatr__slide-out {
+  animation: slide-out-top 0.4s cubic-bezier(0.55, 0.085, 0.68, 0.53) both;
+
+  &.jaszanimatr__direction--top {
+    animation-name: slide-out-top;
+  }
+
+  &.jaszanimatr__direction--right {
+    animation-name: slide-out-right;
+  }
+
+  &.jaszanimatr__direction--bottom {
+    animation-name: slide-out-bottom;
+  }
+
+  &.jaszanimatr__direction--left {
+    animation-name: slide-out-left;
+  }
+}
+
+/**
+ *
+ * animation slide-out-top
+ *
+*/
+@keyframes slide-out-top {
+  0% {
+    transform: translateY(0);
+    visibility: visible;
+  }
+
+  100% {
+    transform: translateY(-100%);
+    visibility: hidden;
+  }
+}
+
+/**
+ *
+ * animation slide-out-right
+ *
+ */
+@keyframes slide-out-right {
+  0% {
+    transform: translateX(0);
+    visibility: visible;
+  }
+
+  100% {
+    transform: translateX(100%);
+    visibility: hidden;
+  }
+}
+
+/**
+ *
+ * animation slide-out-bottom
+ *
+ */
+@keyframes slide-out-bottom {
+  0% {
+    transform: translateY(0);
+    visibility: visible;
+  }
+
+  100% {
+    transform: translateY(100%);
+    visibility: hidden;
+  }
+}
+
+/**
+ *
+ * animation slide-out-left
+ *
+ */
+@keyframes slide-out-left {
+  0% {
+    transform: translateX(0);
+    visibility: visible;
+  }
+
+  100% {
+    transform: translateX(-100%);
+    visibility: hidden;
+  }
+}

@@ -1,0 +1,152 @@
+.animatr {
+  &-header {
+    position: relative;
+    width: 20%;
+    padding: 16px;
+    background-color: #FFFFFF;
+
+    &__buttons {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      display: flex;
+      justify-content: space-between;
+      width: 100%;
+      padding: 16px;
+    }
+  }
+
+  &-logo {
+    width: 50%;
+    margin: auto;
+    text-align: center;
+    animation: bounce-logo 1s ease-in-out both;
+
+    a {
+      text-decoration: none;
+    }
+
+    &__jaszlogo {
+      width: 70%;
+    }
+
+    &__logo-text {
+      line-height: 1;
+      margin-top: -15px;
+      color: #000000;
+      font-family: Vibes, cursive;
+      font-size: 56px;
+      text-shadow: -1px -1px 1px rgb(255 255 255 / 10%), 1px 1px 1px rgb(0 0 0 / 50%);
+      animation: text-logo-show 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94) 1s both;
+    }
+  }
+
+  &-options {
+    margin-top: 32px;
+
+    &__wrapper {
+      margin-bottom: 16px;
+      animation: selection-entrance 0.25s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+
+      &--2nd {
+        animation: selection-entrance 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+      }
+
+      &--3rd {
+        animation: selection-entrance 0.75s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+      }
+
+      &--4th {
+        animation: selection-entrance 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+      }
+
+      &--5th {
+        animation: selection-entrance 1.25s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+      }
+    }
+
+    &__label {
+      display: block;
+      margin-bottom: 4px;
+    }
+
+    &__selector {
+      width: 100%;
+      padding: 8px 0;
+      cursor: pointer;
+    }
+  }
+}
+
+@keyframes bounce-logo {
+  0% {
+    transform: translateY(-45px);
+    animation-timing-function: ease-in;
+    opacity: 1;
+  }
+
+  24% {
+    opacity: 1;
+  }
+
+  40% {
+    transform: translateY(-24px);
+    animation-timing-function: ease-in;
+  }
+
+  65% {
+    transform: translateY(-12px);
+    animation-timing-function: ease-in;
+  }
+
+  82% {
+    transform: translateY(-6px);
+    animation-timing-function: ease-in;
+  }
+
+  93% {
+    transform: translateY(-4px);
+    animation-timing-function: ease-in;
+  }
+
+  25%,
+  55%,
+  75%,
+  87% {
+    transform: translateY(0);
+    animation-timing-function: ease-out;
+  }
+
+  100% {
+    transform: translateY(0);
+    animation-timing-function: ease-out;
+    opacity: 1;
+  }
+}
+
+@keyframes text-logo-show {
+  0% {
+    letter-spacing: -0.5em;
+    transform: translateZ(-800px);
+    filter: blur(12px);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateZ(0);
+    filter: blur(0);
+    opacity: 1;
+  }
+}
+
+@keyframes selection-entrance {
+  0% {
+    transform: translateX(-1000px);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}

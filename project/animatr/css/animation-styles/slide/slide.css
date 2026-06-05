@@ -1,0 +1,247 @@
+/**
+ *
+ * slide-in class
+ *
+*/
+.jaszanimatr__slide-in {
+  animation: slide-in-top 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+}
+
+.jaszanimatr__slide-in.jaszanimatr__direction--top {
+  animation-name: slide-in-top;
+}
+
+.jaszanimatr__slide-in.jaszanimatr__direction--right {
+  animation-name: slide-in-right;
+}
+
+.jaszanimatr__slide-in.jaszanimatr__direction--bottom {
+  animation-name: slide-in-bottom;
+}
+
+.jaszanimatr__slide-in.jaszanimatr__direction--left {
+  animation-name: slide-in-left;
+}
+
+/**
+ *
+ * animation slide-in-top
+ *
+*/
+@keyframes slide-in-top {
+  0% {
+    transform: translateY(-100%);
+    visibility: hidden;
+  }
+
+  100% {
+    transform: translateY(0);
+    visibility: visible;
+  }
+}
+
+/**
+ *
+ * animation slide-in-right
+ *
+ */
+@keyframes slide-in-right {
+  0% {
+    transform: translateX(100%);
+    visibility: hidden;
+  }
+
+  100% {
+    transform: translateX(0);
+    visibility: visible;
+  }
+}
+
+/**
+ *
+ * animation slide-in-bottom
+ *
+ */
+@keyframes slide-in-bottom {
+  0% {
+    transform: translateY(100%);
+    visibility: hidden;
+  }
+
+  100% {
+    transform: translateY(0);
+    visibility: visible;
+  }
+}
+
+/**
+ *
+ * animation slide-in-left
+ *
+ */
+@keyframes slide-in-left {
+  0% {
+    transform: translateX(-100%);
+    visibility: hidden;
+  }
+
+  100% {
+    transform: translateX(0);
+    visibility: visible;
+  }
+}
+
+/**
+ *
+ * slide-out class
+ *
+*/
+.jaszanimatr__slide-out {
+  animation: slide-out-top 0.4s cubic-bezier(0.55, 0.085, 0.68, 0.53) both;
+}
+
+.jaszanimatr__slide-out.jaszanimatr__direction--top {
+  animation-name: slide-out-top;
+}
+
+.jaszanimatr__slide-out.jaszanimatr__direction--right {
+  animation-name: slide-out-right;
+}
+
+.jaszanimatr__slide-out.jaszanimatr__direction--bottom {
+  animation-name: slide-out-bottom;
+}
+
+.jaszanimatr__slide-out.jaszanimatr__direction--left {
+  animation-name: slide-out-left;
+}
+
+/**
+ *
+ * animation slide-out-top
+ *
+*/
+@keyframes slide-out-top {
+  0% {
+    transform: translateY(0);
+    visibility: visible;
+  }
+
+  100% {
+    transform: translateY(-100%);
+    visibility: hidden;
+  }
+}
+
+/**
+ *
+ * animation slide-out-right
+ *
+ */
+@keyframes slide-out-right {
+  0% {
+    transform: translateX(0);
+    visibility: visible;
+  }
+
+  100% {
+    transform: translateX(100%);
+    visibility: hidden;
+  }
+}
+
+/**
+ *
+ * animation slide-out-bottom
+ *
+ */
+@keyframes slide-out-bottom {
+  0% {
+    transform: translateY(0);
+    visibility: visible;
+  }
+
+  100% {
+    transform: translateY(100%);
+    visibility: hidden;
+  }
+}
+
+/**
+ *
+ * animation slide-out-left
+ *
+ */
+@keyframes slide-out-left {
+  0% {
+    transform: translateX(0);
+    visibility: visible;
+  }
+
+  100% {
+    transform: translateX(-100%);
+    visibility: hidden;
+  }
+}
+
+/**
+ *
+ * Animation speed classes
+ *
+*/
+.jaszanimatr__speed--normal {
+  animation-duration: 0.4s;
+}
+
+.jaszanimatr__speed--slow {
+  animation-duration: 0.6s;
+}
+
+.jaszanimatr__speed--slower {
+  animation-duration: 0.8s;
+}
+
+.jaszanimatr__speed--slowest {
+  animation-duration: 1s;
+}
+
+.jaszanimatr__speed--fast {
+  animation-duration: 0.3s;
+}
+
+.jaszanimatr__speed--faster {
+  animation-duration: 0.2s;
+}
+
+.jaszanimatr__speed--fastest {
+  animation-duration: 0.1s;
+}
+
+/**
+ *
+ * Animation Timing classes
+ *
+*/
+.jaszanimatr__timing--ease {
+  animation-timing-function: ease;
+}
+
+.jaszanimatr__timing--ease-out {
+  animation-timing-function: ease-out;
+}
+
+.jaszanimatr__timing--ease-in {
+  animation-timing-function: ease-in;
+}
+
+.jaszanimatr__timing--ease-in-out {
+  animation-timing-function: ease-in-out;
+}
+
+.jaszanimatr__timing--linear {
+  animation-timing-function: linear;
+}
+
+.jaszanimatr__timing--cubic {
+  animation-timing-function: cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}

@@ -1,0 +1,237 @@
+/**
+ *
+ * text-tracking-in class
+ *
+*/
+.jaszanimatr__text-tracking-in {
+  animation: text-tracking-in-center 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+}
+
+.jaszanimatr__text-tracking-in.jaszanimatr__direction--center {
+  animation-name: text-tracking-in-center;
+}
+
+.jaszanimatr__text-tracking-in.jaszanimatr__direction--top {
+  animation-name: text-tracking-in-top;
+}
+
+.jaszanimatr__text-tracking-in.jaszanimatr__direction--bottom {
+  animation-name: text-tracking-in-bottom;
+}
+
+/**
+ *
+ * animation text-tracking-in-center
+ *
+*/
+@keyframes text-tracking-in-center {
+  0% {
+    letter-spacing: -0.5em;
+    opacity: 0;
+  }
+
+  40% {
+    opacity: 0.6;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+/**
+ *
+ * animation text-tracking-in-top
+ *
+*/
+@keyframes text-tracking-in-top {
+  0% {
+    letter-spacing: -0.5em;
+    transform: translateZ(-100px) translateY(-100px);
+    opacity: 0;
+  }
+
+  40% {
+    opacity: 0.6;
+  }
+
+  100% {
+    transform: translateZ(0) translateY(0);
+    opacity: 1;
+  }
+}
+
+/**
+ *
+ * animation text-tracking-in-bottom
+ *
+ */
+@keyframes text-tracking-in-bottom {
+  0% {
+    letter-spacing: -0.5em;
+    transform: translateZ(100px) translateY(100px);
+    opacity: 0;
+  }
+
+  40% {
+    opacity: 0.6;
+  }
+
+  100% {
+    transform: translateZ(0) translateY(0);
+    opacity: 1;
+  }
+}
+
+/**
+ *
+ * text-tracking-out class
+ *
+*/
+.jaszanimatr__text-tracking-out {
+  animation: text-tracking-out-center 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+}
+
+.jaszanimatr__text-tracking-out.jaszanimatr__direction--center {
+  animation-name: text-tracking-out-center;
+}
+
+.jaszanimatr__text-tracking-out.jaszanimatr__direction--top {
+  animation-name: text-tracking-out-top;
+}
+
+.jaszanimatr__text-tracking-out.jaszanimatr__direction--bottom {
+  animation-name: text-tracking-out-bottom;
+}
+
+/**
+ *
+ * animation text-tracking-out-center
+ *
+*/
+@keyframes text-tracking-out-center {
+  0% {
+    opacity: 1;
+    visibility: visible;
+  }
+
+  50% {
+    opacity: 1;
+  }
+
+  100% {
+    letter-spacing: -0.5em;
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+
+/**
+ *
+ * animation text-tracking-out-top
+ *
+*/
+@keyframes text-tracking-out-top {
+  0% {
+    transform: translateZ(0) translateY(0);
+    opacity: 1;
+    visibility: visible;
+  }
+
+  60% {
+    opacity: 1;
+  }
+
+  100% {
+    letter-spacing: -0.5em;
+    transform: translateZ(-100px) translateY(-100px);
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+
+/**
+ *
+ * animation text-tracking-out-bottom
+ *
+ */
+@keyframes text-tracking-out-bottom {
+  0% {
+    transform: translateZ(0) translateY(0);
+    opacity: 1;
+    visibility: visible;
+  }
+
+  60% {
+    opacity: 1;
+  }
+
+  100% {
+    letter-spacing: -0.5em;
+    transform: translateZ(100px) translateY(100px);
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+
+/**
+ *
+ * Animation speed classes
+ *
+*/
+.jaszanimatr__speed--normal {
+  animation-duration: 0.4s;
+}
+
+.jaszanimatr__speed--slow {
+  animation-duration: 0.6s;
+}
+
+.jaszanimatr__speed--slower {
+  animation-duration: 0.8s;
+}
+
+.jaszanimatr__speed--slowest {
+  animation-duration: 1s;
+}
+
+.jaszanimatr__speed--fast {
+  animation-duration: 0.3s;
+}
+
+.jaszanimatr__speed--faster {
+  animation-duration: 0.2s;
+}
+
+.jaszanimatr__speed--fastest {
+  animation-duration: 0.1s;
+}
+
+/**
+ *
+ * Animation Timing classes
+ *
+*/
+.jaszanimatr__timing--ease {
+  animation-timing-function: ease;
+}
+
+.jaszanimatr__timing--ease-out {
+  animation-timing-function: ease-out;
+}
+
+.jaszanimatr__timing--ease-in {
+  animation-timing-function: ease-in;
+}
+
+.jaszanimatr__timing--ease-in-out {
+  animation-timing-function: ease-in-out;
+}
+
+.jaszanimatr__timing--linear {
+  animation-timing-function: linear;
+}
+
+.jaszanimatr__timing--cubic {
+  animation-timing-function: cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}

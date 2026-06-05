@@ -1,0 +1,76 @@
+.animatr {
+  &-alert {
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translateY(-100%);
+    opacity: 0;
+  
+    &__toast {
+      display: flex;
+      justify-content: center;
+      width: 100%;
+      margin-top: 32px;
+
+      &-text {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 16px 32px;
+        background-color: #FFFFFF;
+        box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.5);
+        border-radius: 4px;
+      }
+
+      &--show {
+        animation: toast-show 2s linear both;
+      }
+    }
+
+    &__icon {
+      margin-right: 8px;
+      font-size: 24px;
+  
+      &--success {
+        color: #198754;
+      }
+
+      &--error {
+        color: #CC0000;
+      }
+    }
+  }
+}
+
+@keyframes toast-hide {
+  0% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+
+  100% {
+    transform: translateY(-100%);
+    opacity: 0;
+  }
+}
+
+@keyframes toast-show {
+  0% {
+    transform: translateY(-100%);
+    opacity: 0;
+  }
+
+  10% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+
+  90% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+
+  100% {
+    animation: toast-hide 0.4s linear both;
+  }
+}

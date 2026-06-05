@@ -1,0 +1,2038 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Animatr Element Tester</title>
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;1,600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Vibes&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  
+  <!-- Animatr CSS -->
+  <link rel="stylesheet" href="css/layout.css" />
+  <link rel="stylesheet" href="css/header.css" />
+  <link rel="stylesheet" href="css/main.css" />
+  <link rel="stylesheet" href="css/modal.css" />
+  <link rel="stylesheet" href="css/alert.css" />
+
+  <!-- Animation Styles -->
+  <link rel="stylesheet" href="css/animation-styles/scale/scale.min.css" />
+  <link rel="stylesheet" href="css/animation-styles/slide/slide.min.css" />
+  <link rel="stylesheet" href="css/animation-styles/fade/fade.min.css" />
+  <link rel="stylesheet" href="css/animation-styles/text-shadow/textShadow.min.css" />
+  <link rel="stylesheet" href="css/animation-styles/text-tracking/textTracking.min.css" />
+  <link rel="stylesheet" href="css/animation-styles/focus-blur/focusBlur.min.css" />
+
+
+  <!-- Modal Styles -->
+  <link rel="stylesheet" href="css/modalGuide/modalGuide.css">
+</head>
+<body>
+  <div class="animatr">
+    <header class="animatr-header">
+      <section class="animatr-logo">
+        <a href="/">
+          <img class="animatr-logo__jaszlogo" src="img/JaszLogo.png" alt="Jasz Logo" />
+          <p class="animatr-logo__logo-text">Animatr</p>
+        </a> 
+      </section>
+      <section class="animatr-options">
+        <div class="animatr-options__wrapper">
+          <label class="animatr-options__label">HTML Element</label>
+          <select id="element-selector" class="animatr-options__selector">
+            <option value="#oElementA" selected class="animatr-element__text">&lt;a&gt;</option>
+            <option value="#oElementAbbr" class="animatr-element__text">&lt;abbr&gt;</option>
+            <option value="#oElementAddress" class="animatr-element__text">&lt;address&gt;</option>
+            <option value="#oElementArticle" class="animatr-element__box">&lt;article&gt;</option>
+            <option value="#oElementAside" class="animatr-element__box">&lt;aside&gt;</option>
+            <option value="#oElementBlockqoute" class="animatr-element__text">&lt;blockqoute&gt;</option>
+            <option value="#oElementButton" class="animatr-element__text">&lt;button&gt;</option>
+            <option value="#oElementCode" class="animatr-element__text">&lt;code&gt;</option>
+            <option value="#oElementDd" class="animatr-element__text">&lt;dd&gt;</option>
+            <option value="#oElementDiv" class="animatr-element__box">&lt;div&gt;</option>
+            <option value="#oElementDl" class="animatr-element__text">&lt;dl&gt;</option>
+            <option value="#oElementDt" class="animatr-element__text">&lt;dt&gt;</option>
+            <option value="#oElementEm" class="animatr-element__text">&lt;em&gt;</option>
+            <option value="#oElementFooter" class="animatr-element__box">&lt;footer&gt;</option>
+            <option value="#oElementForm" class="animatr-element__box">&lt;form&gt;</option>
+            <option value="#oElementHeading" class="animatr-element__text">&lt;h1&gt; to &lt;h6&gt;</option>
+            <option value="#oElementI" class="animatr-element__text">&lt;i&gt;</option>
+            <option value="#oElementIframe" class="animatr-element__box">&lt;iframe&gt;</option>
+            <option value="#oElementImg" class="animatr-element__box">&lt;img&gt;</option>
+            <option value="#oElementInput" class="animatr-element__box">&lt;input&gt;</option>
+            <option value="#oElementLabel" class="animatr-element__text">&lt;label&gt;</option>
+            <option value="#oElementLi" class="animatr-element__text">&lt;li&gt;</option>
+            <option value="#oElementMain" class="animatr-element__box">&lt;main&gt;</option>
+            <option value="#oElementMark" class="animatr-element__text">&lt;mark&gt;</option>
+            <option value="#oElementMeter" class="animatr-element__box">&lt;meter&gt;</option>
+            <option value="#oElementNav" class="animatr-element__box">&lt;nav&gt;</option>
+            <option value="#oElementOl" class="animatr-element__text">&lt;ol&gt;</option>
+            <option value="#oElementP" class="animatr-element__text">&lt;p&gt;</option>
+            <option value="#oElementPre" class="animatr-element__text">&lt;pre&gt;</option>
+            <option value="#oElementQ" class="animatr-element__text">&lt;q&gt;</option>
+            <option value="#oElementSection" class="animatr-element__box">&lt;section&gt;</option>
+            <option value="#oElementSelect" class="animatr-element__box">&lt;select&gt;</option>
+            <option value="#oElementSmall" class="animatr-element__text">&lt;small&gt;</option>
+            <option value="#oElementSpan" class="animatr-element__text">&lt;span&gt;</option>
+            <option value="#oElementStrong" class="animatr-element__text">&lt;strong&gt;</option>
+            <option value="#oElementTable" class="animatr-element__box">&lt;table&gt;</option>
+            <option value="#oElementTextarea" class="animatr-element__box">&lt;textarea&gt;</option>
+            <option value="#oElementU" class="animatr-element__text">&lt;u&gt;</option>
+            <option value="#oElementUl" class="animatr-element__text">&lt;ul&gt;</option>
+            <option value="#oElementVideo" class="animatr-element__box">&lt;video&gt;</option>
+          </select>
+        </div>
+        <div class="animatr-options__wrapper animatr-options__wrapper--2nd">
+          <label class="animatr-options__label">Animation Name</label>
+          <select id="animation-selector" class="animatr-options__selector">
+            <optgroup label="Box Animation" class="animatr-animation__box">
+              <option value="#oScale" selected>Scale</option>
+              <option value="#oSlide">Slide</option>
+              <option value="#oFade">Fade</option>
+            </optgroup>
+            <optgroup label="Text Animation" class="animatr-animation__text">
+              <option value="#oTextTracking">Text Tracking</option>
+              <option value="#oTextFocus">Text Focus and Text Blur</option>
+              <option value="#oTextShadow">Text Shadow</option>
+            </optgroup>
+          </select>
+        </div>
+        <div class="animatr-options__wrapper animatr-options__wrapper--3rd">
+          <label class="animatr-options__label">Animation Direction</label>
+          <select id="direction-selector" class="animatr-options__selector">
+            <option class="animatr-options__direction--default" value="#oDirectionDefault" selected>Default</option>
+            <option class="animatr-options__direction--center" value="#oDirectionCenter">Center</option>
+            <option class="animatr-options__direction--top" value="#oDirectionTop">Top</option>
+            <option class="animatr-options__direction--right" value="#oDirectionRight">Right</option>
+            <option class="animatr-options__direction--bottom" value="#oDirectionBottom">Bottom</option>
+            <option class="animatr-options__direction--left" value="#oDirectionLeft">Left</option>
+          </select>
+        </div>
+        <div class="animatr-options__wrapper animatr-options__wrapper--4th">
+          <label class="animatr-options__label">Animation Speed</label>
+          <select id="speed-selector" class="animatr-options__selector">
+            <option value="#oSpeedDefault" selected>Default</option>
+            <option value="#oSpeedNormal">Normal</option>
+            <option value="#oSpeedFast">Fast</option>
+            <option value="#oSpeedFaster">Faster</option>
+            <option value="#oSpeedFastest">Fastest</option>
+            <option value="#oSpeedSlow">Slow</option>
+            <option value="#oSpeedSlower">Slower</option>
+            <option value="#oSpeedSlowest">Slowest</option>
+          </select>
+        </div>
+        <div class="animatr-options__wrapper animatr-options__wrapper--5th">
+          <label class="animatr-options__label">Animation Timing Function</label>
+          <select id="timing-selector" class="animatr-options__selector">
+            <option value="#oTimingDefault" selected>Default</option>
+            <option value="#oTimingEase">Ease</option>
+            <option value="#oTimingEaseIn">Ease In</option>
+            <option value="#oTimingEaseOut">Ease Out</option>
+            <option value="#oTimingEaseInOut">Ease In Out</option>
+            <option value="#oTimingLinear">Linear</option>
+            <option value="#oTimingCubic">Cubic-bezier</option>
+          </select>
+        </div>
+        <div class="animatr-header__buttons">
+          <a class="animatr-button animatr-button__download" href="https://github.com/iamjasz/Jasz-Animatr"><i class="fa-solid fa-download"></i> Repository</a>
+          <button class="animatr-button animatr-button__guide"><i class="fa-solid fa-newspaper"></i> Guide</button>
+        </div>
+      </section>
+    </header>
+    <main>
+      <section class="animatr-output">
+        <div class="animatr-output__top">
+          <section id="animatr-tag" class="animatr-tag"></section>
+          <button class="animatr-button animatr-button__animate"><i class="fa-solid fa-play"></i> Animate</button>
+        </div>
+        <div class="animatr-output__bottom">
+          <div class="animatr-output__bottom-box">
+            <textarea class="animatr-textarea" id="css-box" wrap="on" readonly>
+              code
+            </textarea>
+            <button class="animatr-button animatr-button__copy-css"><i class="fa-solid fa-copy"></i> Copy CSS</button>
+          </div>
+          <div class="animatr-output__bottom-box">
+            <textarea class="animatr-textarea" id="keyframes-box"  wrap="on" readonly>
+              code
+            </textarea>
+            <button class="animatr-button animatr-button__copy-keyframes"><i class="fa-solid fa-copy"></i> Copy Keyframes</button>
+          </div>
+        </div>
+      </section>
+    </main>
+    <!-- Start Guide Modal Section -->
+    <section id="guide-modal" class="m-guide animatr-modal hidden">
+      <div class="animatr-modal__wrapper jaszanimatr__speed--faster">
+        <div class="animatr-modal__top">
+          <h3 class="animatr-modal__title">Cafe24 Animatr - How to use</h3>
+          <button class="animatr-modal__close-button"><i class="fa-solid fa-circle-xmark"></i></button>
+        </div>
+        <br>
+        <div class="animatr-modal__content">
+          <select id="guide-select" class="animatr-options__selector">
+            <optgroup label="Box Animation">
+              <option value="scale-guide" selected>Scale</option>
+              <option value="slide-guide">Slide</option>
+              <option value="fade-guide">Fade</option>
+            </optgroup>
+            <optgroup label="Text Animation">
+              <option value="text-tracking-guide">Text Tracking</option>
+              <option value="text-focus-guide">Text Focus</option>
+              <option value="text-blur-guide">Text Blur</option>
+              <option value="text-shadow-guide">Text Shadow</option>
+            </optgroup>
+          </select>
+          <br>
+          <br>
+          <!-- beginning of scale guide -->
+          <div class="scale-guide hide-guide show-guide scrollable-guide">
+            <h2 class="guide-title">Scale</h2>
+            <article class="article-guide">
+              <h3>Child element scales in to the center by default.</h3>
+              <p class="tag-box">
+                <span class="html-tag">
+                  &lt;div
+                  <span class="html-class">class</span><span class="html-equals">=</span><span class="html-classname">
+                    "jaszanimatr__scale-in"
+                  </span>
+                  &gt;
+                </span>
+                <br>
+                <span class="html-tag html-indent">
+                  &lt;div&gt;
+                </span>
+                <span class="html-content">content</span>
+                <span class="html-tag">&lt;/div&gt;</span>
+                <br>
+                <span class="html-tag">&lt;/div&gt;</span>
+              </p>
+            </article>
+            <article class="article-guide">
+              <h3>Child element scales out from the center by default.</h3>
+              <p class="tag-box">
+                <span class="html-tag">
+                  &lt;div
+                  <span class="html-class">class</span><span class="html-equals">=</span><span class="html-classname">
+                    "jaszanimatr__scale-out"
+                  </span>
+                  &gt;
+                </span>
+                <br>
+                <span class="html-tag html-indent">
+                  &lt;div&gt;
+                </span>
+                <span class="html-content">content</span>
+                <span class="html-tag">&lt;/div&gt;</span>
+                <br>
+                <span class="html-tag">&lt;/div&gt;</span>
+              </p>
+            </article>
+            <article class="article-guide">
+              <h3>Change the scale direction by adding one of the classes from the following table.</h3>
+              <p class="tag-box">
+                <span class="html-tag">
+                  &lt;div
+                  <span class="html-class">class</span><span class="html-equals">=</span><span class="html-classname">
+                    "jaszanimatr__scale-in&nbsp;&nbsp;jaszanimatr__direction--top"
+                  </span>
+                  &gt;
+                </span>
+                <br>
+                <span class="html-tag html-indent">
+                  &lt;div&gt;
+                </span>
+                <span class="html-content">content</span>
+                <span class="html-tag">&lt;/div&gt;</span>
+                <br>
+                <span class="html-tag">&lt;/div&gt;</span>
+              </p>
+              <br>
+              <div class="animatr-modal__table">
+                <table class="animatr-modal__table-list">
+                  <tr>
+                    <th>Animation Direction</th>
+                    <th>Class Name</th>
+                  </tr>
+                  <tr>
+                    <td>Center</td>
+                    <td>.jaszanimatr__direction--center</td>
+                  </tr>
+                  <tr>
+                    <td>Top</td>
+                    <td>.jaszanimatr__direction--top</td>
+                  </tr>
+                  <tr>
+                    <td>Right</td>
+                    <td>.jaszanimatr__direction--right</td>
+                  </tr>
+                  <tr>
+                    <td>Bottom</td>
+                    <td>.jaszanimatr__direction--bottom</td>
+                  </tr>
+                  <tr>
+                    <td>Left</td>
+                    <td>.jaszanimatr__direction--left</td>
+                  </tr>
+                </table>
+              </div>
+            </article>
+            <article class="article-guide">
+              <h3>Change the scale speed by adding one of the classes from the following table. Speed is normal by default.</h3>
+              <p class="tag-box">
+                <span class="html-tag">
+                  &lt;div
+                  <span class="html-class">class</span><span class="html-equals">=</span><span class="html-classname">
+                    "jaszanimatr__scale-in&nbsp;&nbsp;jaszanimatr__speed--faster"
+                  </span>
+                  &gt;
+                </span>
+                <br>
+                <span class="html-tag html-indent">
+                  &lt;div&gt;
+                </span>
+                <span class="html-content">content</span>
+                <span class="html-tag">&lt;/div&gt;</span>
+                <br>
+                <span class="html-tag">&lt;/div&gt;</span>
+              </p>
+              <br>
+              <div class="animatr-modal__table">
+                <table class="animatr-modal__table-list">
+                  <tr>
+                    <th>Animation Speed</th>
+                    <th>Class Name</th>
+                    <th>Time</th>
+                  </tr>
+                  <tr>
+                    <td>Normal</td>
+                    <td>.jaszanimatr__speed--normal</td>
+                    <td>0.4s</td>
+                  </tr>
+                  <tr>
+                    <td>Slow</td>
+                    <td>.jaszanimatr__speed--slow</td>
+                    <td>0.6s</td>
+                  </tr>
+                  <tr>
+                    <td>Slower</td>
+                    <td>.jaszanimatr__speed--slower</td>
+                    <td>0.8s</td>
+                  </tr>
+                  <tr>
+                    <td>Slowest</td>
+                    <td>.jaszanimatr__speed--slowest</td>
+                    <td>1s</td>
+                  </tr>
+                  <tr>
+                    <td>Fast</td>
+                    <td>.jaszanimatr__speed--fast</td>
+                    <td>0.3s</td>
+                  </tr>
+                  <tr>
+                    <td>Faster</td>
+                    <td>.jaszanimatr__speed--faster</td>
+                    <td>0.2s</td>
+                  </tr>
+                  <tr>
+                    <td>Fastest</td>
+                    <td>.jaszanimatr__speed--fastest</td>
+                    <td>0.1s</td>
+                  </tr>
+                </table>
+              </div>
+            </article>
+            <article class="article-guide">
+              <h3>Add timing function by adding one of the classes from the following table. Timing function is cubic by default</h3>
+              <p class="tag-box">
+                <span class="html-tag">
+                  &lt;div
+                  <span class="html-class">class</span><span class="html-equals">=</span><span class="html-classname">
+                    "jaszanimatr__scale-in&nbsp;&nbsp;.jaszanimatr__timing--ease-in"
+                  </span>
+                  &gt;
+                </span>
+                <br>
+                <span class="html-tag html-indent">
+                  &lt;div&gt;
+                </span>
+                <span class="html-content">content</span>
+                <span class="html-tag">&lt;/div&gt;</span>
+                <br>
+                <span class="html-tag">&lt;/div&gt;</span>
+              </p>
+              <br>
+              <div class="animatr-modal__table">
+                <table class="animatr-modal__table-list">
+                  <tr>
+                    <th>Timing Function</th>
+                    <th>Class Name</th>
+                  </tr>
+                  <tr>
+                    <td>Ease</td>
+                    <td>.jaszanimatr__timing--ease</td>
+                  </tr>
+                  <tr>
+                    <td>Ease In</td>
+                    <td>.jaszanimatr__timing--ease-in</td>
+                  </tr>
+                  <tr>
+                    <td>Ease Out</td>
+                    <td>.jaszanimatr__timing--ease-out</td>
+                  </tr>
+                  <tr>
+                    <td>Ease In Out</td>
+                    <td>.jaszanimatr__timing--ease-in-out</td>
+                  </tr>
+                  <tr>
+                    <td>Linear</td>
+                    <td>.jaszanimatr__timing--linear</td>
+                  </tr>
+                  <tr>
+                    <td>Cubic</td>
+                    <td>.jaszanimatr__timing--cubic</td>
+                  </tr>
+                </table>
+              </div>
+            </article>
+            <article class="article-guide">
+              <h3>Change both direction and speed.</h3>
+              <div class="tag-box-scrollable">
+                <p class="tag-box" style="width: 750px;">
+                  <span class="html-tag">
+                    &lt;div
+                    <span class="html-class">class</span><span class="html-equals">=</span><span class="html-classname">
+                      "jaszanimatr__scale-in&nbsp;&nbsp;jaszanimatr__direction--top&nbsp;&nbsp;jaszanimatr__speed--faster"
+                    </span>
+                    &gt;
+                  </span>
+                  <br>
+                  <span class="html-tag html-indent">
+                    &lt;div&gt;
+                  </span>
+                  <span class="html-content">content</span>
+                  <span class="html-tag">&lt;/div&gt;</span>
+                  <br>
+                  <span class="html-tag">&lt;/div&gt;</span>
+                </p>
+              </div>
+            </article>
+            <article class="article-guide">
+              <h3>Change both direction and timing.</h3>
+              <div class="tag-box-scrollable">
+                <p class="tag-box" style="width: 780px;">
+                  <span class="html-tag">
+                    &lt;div
+                    <span class="html-class">class</span><span class="html-equals">=</span><span class="html-classname">
+                      "jaszanimatr__scale-in&nbsp;&nbsp;jaszanimatr__direction--top&nbsp;&nbsp;.jaszanimatr__timing--ease-out"
+                    </span>
+                    &gt;
+                  </span>
+                  <br>
+                  <span class="html-tag html-indent">
+                    &lt;div&gt;
+                  </span>
+                  <span class="html-content">content</span>
+                  <span class="html-tag">&lt;/div&gt;</span>
+                  <br>
+                  <span class="html-tag">&lt;/div&gt;</span>
+                </p>
+              </div>
+            </article>
+            <article class="article-guide">
+              <h3>Change direction, timing and speed.</h3>
+              <div class="tag-box-scrollable">
+                <p class="tag-box" style="width: 1020px;">
+                  <span class="html-tag">
+                    &lt;div
+                    <span class="html-class">class</span><span class="html-equals">=</span><span class="html-classname">
+                      "jaszanimatr__scale-in&nbsp;&nbsp;jaszanimatr__direction--top&nbsp;&nbsp;.jaszanimatr__timing--ease-out&nbsp;&nbsp;.jaszanimatr__speed--slowest"
+                    </span>
+                    &gt;
+                  </span>
+                  <br>
+                  <span class="html-tag html-indent">
+                    &lt;div&gt;
+                  </span>
+                  <span class="html-content">content</span>
+                  <span class="html-tag">&lt;/div&gt;</span>
+                  <br>
+                  <span class="html-tag">&lt;/div&gt;</span>
+                </p>
+              </div>
+            </article>
+            <article class="article-guide">
+              <h3>Customize animation speed by changing the animation duration value.</h3>
+              <div class="tag-box-scrollable">
+                <p class="tag-box">
+                  <span class="html-classname">.jaszanimatr__scale-in</span>
+                  {<br>
+                  &nbsp;&nbsp;&nbsp;&nbsp;<span class="html-tag">animation-duration</span>
+                  :&nbsp;<span class="html-class">3s</span>;<br>
+                  }
+                </p>
+              </div>
+            </article>
+            <article class="article-guide">
+              <h3>Customize animation delay by changing the animation delay value.</h3>
+              <div class="tag-box-scrollable">
+                <p class="tag-box">
+                  <span class="html-classname">.jaszanimatr__scale-in</span>
+                  {<br>
+                  &nbsp;&nbsp;&nbsp;&nbsp;<span class="html-tag">animation-delay</span>
+                  :&nbsp;<span class="html-class">2s</span>;<br>
+                  }
+                </p>
+              </div>
+            </article>
+          </div>
+          <!-- ending of scale guide -->
+          <!-- beginning of slide guide -->
+          <div class="slide-guide hide-guide scrollable-guide">
+            <h2 class="guide-title">Slide</h2>
+            <article class="article-guide">
+              <h3>Child element slides in from the top by default.</h3>
+              <p class="tag-box">
+                <span class="html-tag">
+                  &lt;div
+                  <span class="html-class">class</span><span class="html-equals">=</span><span class="html-classname">
+                    "jaszanimatr__slide-in"
+                  </span>
+                  &gt;
+                </span>
+                <br>
+                <span class="html-tag html-indent">
+                  &lt;div&gt;
+                </span>
+                <span class="html-content">content</span>
+                <span class="html-tag">&lt;/div&gt;</span>
+                <br>
+                <span class="html-tag">&lt;/div&gt;</span>
+              </p>
+            </article>
+            <article class="article-guide">
+              <h3>Child element slides out to the top by default.</h3>
+              <p class="tag-box">
+                <span class="html-tag">
+                  &lt;div
+                  <span class="html-class">class</span><span class="html-equals">=</span><span class="html-classname">
+                    "jaszanimatr__slide-out"
+                  </span>
+                  &gt;
+                </span>
+                <br>
+                <span class="html-tag html-indent">
+                  &lt;div&gt;
+                </span>
+                <span class="html-content">content</span>
+                <span class="html-tag">&lt;/div&gt;</span>
+                <br>
+                <span class="html-tag">&lt;/div&gt;</span>
+              </p>
+            </article>
+            <article class="article-guide">
+              <h3>Change the slide direction by adding one of the classes from the following table.</h3>
+              <p class="tag-box">
+                <span class="html-tag">
+                  &lt;div
+                  <span class="html-class">class</span><span class="html-equals">=</span><span class="html-classname">
+                    "jaszanimatr__slide-in&nbsp;&nbsp;.jaszanimatr__direction--left"
+                  </span>
+                  &gt;
+                </span>
+                <br>
+                <span class="html-tag html-indent">
+                  &lt;div&gt;
+                </span>
+                <span class="html-content">content</span>
+                <span class="html-tag">&lt;/div&gt;</span>
+                <br>
+                <span class="html-tag">&lt;/div&gt;</span>
+              </p>
+              <br>
+              <div class="animatr-modal__table">
+                <table class="animatr-modal__table-list">
+                  <tr>
+                    <th>Animation Direction</th>
+                    <th>Class Name</th>
+                  </tr>
+                  <tr>
+                    <td>Top</td>
+                    <td>.jaszanimatr__direction--top</td>
+                  </tr>
+                  <tr>
+                    <td>Right</td>
+                    <td>.jaszanimatr__direction--right</td>
+                  </tr>
+                  <tr>
+                    <td>Bottom</td>
+                    <td>.jaszanimatr__direction--bottom</td>
+                  </tr>
+                  <tr>
+                    <td>Left</td>
+                    <td>.jaszanimatr__direction--left</td>
+                  </tr>
+                </table>
+              </div>
+            </article>
+            <article class="article-guide">
+              <h3>Change the slide speed by adding one of the classes from the following table. Speed is normal by default.</h3>
+              <p class="tag-box">
+                <span class="html-tag">
+                  &lt;div
+                  <span class="html-class">class</span><span class="html-equals">=</span><span class="html-classname">
+                    "jaszanimatr__slide-out&nbsp;&nbsp;jaszanimatr__speed--faster"
+                  </span>
+                  &gt;
+                </span>
+                <br>
+                <span class="html-tag html-indent">
+                  &lt;div&gt;
+                </span>
+                <span class="html-content">content</span>
+                <span class="html-tag">&lt;/div&gt;</span>
+                <br>
+                <span class="html-tag">&lt;/div&gt;</span>
+              </p>
+              <br>
+              <div class="animatr-modal__table">
+                <table class="animatr-modal__table-list">
+                  <tr>
+                    <th>Animation Speed</th>
+                    <th>Class Name</th>
+                    <th>Time</th>
+                  </tr>
+                  <tr>
+                    <td>Normal</td>
+                    <td>.jaszanimatr__speed--normal</td>
+                    <td>0.4s</td>
+                  </tr>
+                  <tr>
+                    <td>Slow</td>
+                    <td>.jaszanimatr__speed--slow</td>
+                    <td>0.6s</td>
+                  </tr>
+                  <tr>
+                    <td>Slower</td>
+                    <td>.jaszanimatr__speed--slower</td>
+                    <td>0.8s</td>
+                  </tr>
+                  <tr>
+                    <td>Slowest</td>
+                    <td>.jaszanimatr__speed--slowest</td>
+                    <td>1s</td>
+                  </tr>
+                  <tr>
+                    <td>Fast</td>
+                    <td>.jaszanimatr__speed--fast</td>
+                    <td>0.3s</td>
+                  </tr>
+                  <tr>
+                    <td>Faster</td>
+                    <td>.jaszanimatr__speed--faster</td>
+                    <td>0.2s</td>
+                  </tr>
+                  <tr>
+                    <td>Fastest</td>
+                    <td>.jaszanimatr__speed--fastest</td>
+                    <td>0.1s</td>
+                  </tr>
+                </table>
+              </div>
+            </article>
+            <article class="article-guide">
+              <h3>Add timing function by adding one of the classes from the following table. Timing function is cubic by default</h3>
+              <p class="tag-box">
+                <span class="html-tag">
+                  &lt;div
+                  <span class="html-class">class</span><span class="html-equals">=</span><span class="html-classname">
+                    "jaszanimatr__slide-in&nbsp;&nbsp;.jaszanimatr__timing--ease-in"
+                  </span>
+                  &gt;
+                </span>
+                <br>
+                <span class="html-tag html-indent">
+                  &lt;div&gt;
+                </span>
+                <span class="html-content">content</span>
+                <span class="html-tag">&lt;/div&gt;</span>
+                <br>
+                <span class="html-tag">&lt;/div&gt;</span>
+              </p>
+              <br>
+              <div class="animatr-modal__table">
+                <table class="animatr-modal__table-list">
+                  <tr>
+                    <th>Timing Function</th>
+                    <th>Class Name</th>
+                  </tr>
+                  <tr>
+                    <td>Ease</td>
+                    <td>.jaszanimatr__timing--ease</td>
+                  </tr>
+                  <tr>
+                    <td>Ease In</td>
+                    <td>.jaszanimatr__timing--ease-in</td>
+                  </tr>
+                  <tr>
+                    <td>Ease Out</td>
+                    <td>.jaszanimatr__timing--ease-out</td>
+                  </tr>
+                  <tr>
+                    <td>Ease In Out</td>
+                    <td>.jaszanimatr__timing--ease-in-out</td>
+                  </tr>
+                  <tr>
+                    <td>Linear</td>
+                    <td>.jaszanimatr__timing--linear</td>
+                  </tr>
+                  <tr>
+                    <td>Cubic</td>
+                    <td>.jaszanimatr__timing--cubic</td>
+                  </tr>
+                </table>
+              </div>
+            </article>
+            <article class="article-guide">
+              <h3>Change both direction and speed.</h3>
+              <div class="tag-box-scrollable">
+                <p class="tag-box" style="width: 780px;">
+                  <span class="html-tag">
+                    &lt;div
+                    <span class="html-class">class</span><span class="html-equals">=</span><span class="html-classname">
+                      "jaszanimatr__slide-out&nbsp;&nbsp;jaszanimatr__direction--right&nbsp;&nbsp;jaszanimatr__speed--slower"
+                    </span>
+                    &gt;
+                  </span>
+                  <br>
+                  <span class="html-tag html-indent">
+                    &lt;div&gt;
+                  </span>
+                  <span class="html-content">content</span>
+                  <span class="html-tag">&lt;/div&gt;</span>
+                  <br>
+                  <span class="html-tag">&lt;/div&gt;</span>
+                </p>
+              </div>
+            </article>
+            <article class="article-guide">
+              <h3>Change both direction and timing.</h3>
+              <div class="tag-box-scrollable">
+                <p class="tag-box" style="width: 780px;">
+                  <span class="html-tag">
+                    &lt;div
+                    <span class="html-class">class</span><span class="html-equals">=</span><span class="html-classname">
+                      "jaszanimatr__slide-in&nbsp;&nbsp;jaszanimatr__direction--right&nbsp;&nbsp;.jaszanimatr__timing--ease-in"
+                    </span>
+                    &gt;
+                  </span>
+                  <br>
+                  <span class="html-tag html-indent">
+                    &lt;div&gt;
+                  </span>
+                  <span class="html-content">content</span>
+                  <span class="html-tag">&lt;/div&gt;</span>
+                  <br>
+                  <span class="html-tag">&lt;/div&gt;</span>
+                </p>
+              </div>
+            </article>
+            <article class="article-guide">
+              <h3>Change direction, timing and speed.</h3>
+              <div class="tag-box-scrollable">
+                <p class="tag-box" style="width: 1020px;">
+                  <span class="html-tag">
+                    &lt;div
+                    <span class="html-class">class</span><span class="html-equals">=</span><span class="html-classname">
+                      "jaszanimatr__slide-in&nbsp;&nbsp;jaszanimatr__direction--right&nbsp;&nbsp;.jaszanimatr__timing--ease-in&nbsp;&nbsp;.jaszanimatr__speed--faster"
+                    </span>
+                    &gt;
+                  </span>
+                  <br>
+                  <span class="html-tag html-indent">
+                    &lt;div&gt;
+                  </span>
+                  <span class="html-content">content</span>
+                  <span class="html-tag">&lt;/div&gt;</span>
+                  <br>
+                  <span class="html-tag">&lt;/div&gt;</span>
+                </p>
+              </div>
+            </article>
+            <article class="article-guide">
+              <h3>Customize animation speed by changing the animation duration value.</h3>
+              <div class="tag-box-scrollable">
+                <p class="tag-box">
+                  <span class="html-classname">.jaszanimatr__slide-in</span>
+                  {<br>
+                  &nbsp;&nbsp;&nbsp;&nbsp;<span class="html-tag">animation-duration</span>
+                  :&nbsp;<span class="html-class">3s</span>;<br>
+                  }
+                </p>
+              </div>
+            </article>
+            <article class="article-guide">
+              <h3>Customize animation delay by changing the animation delay value.</h3>
+              <div class="tag-box-scrollable">
+                <p class="tag-box">
+                  <span class="html-classname">.jaszanimatr__slide-in</span>
+                  {<br>
+                  &nbsp;&nbsp;&nbsp;&nbsp;<span class="html-tag">animation-delay</span>
+                  :&nbsp;<span class="html-class">2s</span>;<br>
+                  }
+                </p>
+              </div>
+            </article>
+          </div>
+          <!-- end of slide guide -->
+          <!-- beginning of fade guide -->
+          <div class="fade-guide hide-guide scrollable-guide">
+            <h2 class="guide-title">Fade</h2>
+            <article class="article-guide">
+              <h3>Child element fades in by default.</h3>
+              <p class="tag-box">
+                <span class="html-tag">
+                  &lt;div
+                  <span class="html-class">class</span><span class="html-equals">=</span><span class="html-classname">
+                    "jaszanimatr__fade-in"
+                  </span>
+                  &gt;
+                </span>
+                <br>
+                <span class="html-tag html-indent">
+                  &lt;div&gt;
+                </span>
+                <span class="html-content">content</span>
+                <span class="html-tag">&lt;/div&gt;</span>
+                <br>
+                <span class="html-tag">&lt;/div&gt;</span>
+              </p>
+            </article>
+            <article class="article-guide">
+              <h3>Child element fades out by default.</h3>
+              <p class="tag-box">
+                <span class="html-tag">
+                  &lt;div
+                  <span class="html-class">class</span><span class="html-equals">=</span><span class="html-classname">
+                    "jaszanimatr__fade-out"
+                  </span>
+                  &gt;
+                </span>
+                <br>
+                <span class="html-tag html-indent">
+                  &lt;div&gt;
+                </span>
+                <span class="html-content">content</span>
+                <span class="html-tag">&lt;/div&gt;</span>
+                <br>
+                <span class="html-tag">&lt;/div&gt;</span>
+              </p>
+            </article>
+            <article class="article-guide">
+              <h3>Change the fade direction by adding one of the classes from the following table. Fading in place or center is the default value.</h3>
+              <p class="tag-box">
+                <span class="html-tag">
+                  &lt;div
+                  <span class="html-class">class</span><span class="html-equals">=</span><span class="html-classname">
+                    "jaszanimatr__fade-out&nbsp;&nbsp;jaszanimatr__direction--bottom"
+                  </span>
+                  &gt;
+                </span>
+                <br>
+                <span class="html-tag html-indent">
+                  &lt;div&gt;
+                </span>
+                <span class="html-content">content</span>
+                <span class="html-tag">&lt;/div&gt;</span>
+                <br>
+                <span class="html-tag">&lt;/div&gt;</span>
+              </p>
+              <br>
+              <div class="animatr-modal__table">
+                <table class="animatr-modal__table-list">
+                  <tr>
+                    <th>Animation Direction</th>
+                    <th>Class Name</th>
+                  </tr>
+                  <tr>
+                    <td>Center</td>
+                    <td>.jaszanimatr__direction--center</td>
+                  </tr>
+                  <tr>
+                    <td>Top</td>
+                    <td>.jaszanimatr__direction--top</td>
+                  </tr>
+                  <tr>
+                    <td>Right</td>
+                    <td>.jaszanimatr__direction--right</td>
+                  </tr>
+                  <tr>
+                    <td>Bottom</td>
+                    <td>.jaszanimatr__direction--bottom</td>
+                  </tr>
+                  <tr>
+                    <td>Left</td>
+                    <td>.jaszanimatr__direction--left</td>
+                  </tr>
+                </table>
+              </div>
+            </article>
+            <article class="article-guide">
+              <h3>Change the fade speed by adding one of the classes from the following table. Speed is normal by default.</h3>
+              <p class="tag-box">
+                <span class="html-tag">
+                  &lt;div
+                  <span class="html-class">class</span><span class="html-equals">=</span><span class="html-classname">
+                    "jaszanimatr__fade-out&nbsp;&nbsp;jaszanimatr__speed--faster"
+                  </span>
+                  &gt;
+                </span>
+                <br>
+                <span class="html-tag html-indent">
+                  &lt;div&gt;
+                </span>
+                <span class="html-content">content</span>
+                <span class="html-tag">&lt;/div&gt;</span>
+                <br>
+                <span class="html-tag">&lt;/div&gt;</span>
+              </p>
+              <br>
+              <div class="animatr-modal__table">
+                <table class="animatr-modal__table-list">
+                  <tr>
+                    <th>Animation Speed</th>
+                    <th>Class Name</th>
+                    <th>Time</th>
+                  </tr>
+                  <tr>
+                    <td>Normal</td>
+                    <td>.jaszanimatr__speed--normal</td>
+                    <td>0.4s</td>
+                  </tr>
+                  <tr>
+                    <td>Slow</td>
+                    <td>.jaszanimatr__speed--slow</td>
+                    <td>0.6s</td>
+                  </tr>
+                  <tr>
+                    <td>Slower</td>
+                    <td>.jaszanimatr__speed--slower</td>
+                    <td>0.8s</td>
+                  </tr>
+                  <tr>
+                    <td>Slowest</td>
+                    <td>.jaszanimatr__speed--slowest</td>
+                    <td>1s</td>
+                  </tr>
+                  <tr>
+                    <td>Fast</td>
+                    <td>.jaszanimatr__speed--fast</td>
+                    <td>0.3s</td>
+                  </tr>
+                  <tr>
+                    <td>Faster</td>
+                    <td>.jaszanimatr__speed--faster</td>
+                    <td>0.2s</td>
+                  </tr>
+                  <tr>
+                    <td>Fastest</td>
+                    <td>.jaszanimatr__speed--fastest</td>
+                    <td>0.1s</td>
+                  </tr>
+                </table>
+              </div>
+            </article>
+            <article class="article-guide">
+              <h3>Add timing function by adding one of the classes from the following table. Timing function is cubic by default</h3>
+              <p class="tag-box">
+                <span class="html-tag">
+                  &lt;div
+                  <span class="html-class">class</span><span class="html-equals">=</span><span class="html-classname">
+                    "jaszanimatr__fade-out&nbsp;&nbsp;.jaszanimatr__timing--ease-out"
+                  </span>
+                  &gt;
+                </span>
+                <br>
+                <span class="html-tag html-indent">
+                  &lt;div&gt;
+                </span>
+                <span class="html-content">content</span>
+                <span class="html-tag">&lt;/div&gt;</span>
+                <br>
+                <span class="html-tag">&lt;/div&gt;</span>
+              </p>
+              <br>
+              <div class="animatr-modal__table">
+                <table class="animatr-modal__table-list">
+                  <tr>
+                    <th>Fade In Timing Function</th>
+                    <th>Class Name</th>
+                  </tr>
+                  <tr>
+                    <td>Ease</td>
+                    <td>.jaszanimatr__timing--ease</td>
+                  </tr>
+                  <tr>
+                    <td>Ease In</td>
+                    <td>.jaszanimatr__timing--ease-in</td>
+                  </tr>
+                  <tr>
+                    <td>Linear</td>
+                    <td>.jaszanimatr__timing--linear</td>
+                  </tr>
+                  <tr>
+                    <td>Cubic</td>
+                    <td>.jaszanimatr__timing--cubic</td>
+                  </tr>
+                </table>
+                <br>
+                <table class="animatr-modal__table-list">
+                  <tr>
+                    <th>Fade Out Timing Function</th>
+                    <th>Class Name</th>
+                  </tr>
+                  <tr>
+                    <td>Ease</td>
+                    <td>.jaszanimatr__timing--ease</td>
+                  </tr>
+                  <tr>
+                    <td>Ease Out</td>
+                    <td>.jaszanimatr__timing--ease-out</td>
+                  </tr>
+                  <tr>
+                    <td>Linear</td>
+                    <td>.jaszanimatr__timing--linear</td>
+                  </tr>
+                  <tr>
+                    <td>Cubic</td>
+                    <td>.jaszanimatr__timing--cubic</td>
+                  </tr>
+                </table>
+              </div>
+            </article>
+            <article class="article-guide">
+              <h3>Change both direction and speed.</h3>
+              <div class="tag-box-scrollable">
+                <p class="tag-box" style="width: 790px;">
+                  <span class="html-tag">
+                    &lt;div
+                    <span class="html-class">class</span><span class="html-equals">=</span><span class="html-classname">
+                      "jaszanimatr__fade-out&nbsp;&nbsp;jaszanimatr__direction--bottom&nbsp;&nbsp;jaszanimatr__speed--faster"
+                    </span>
+                    &gt;
+                  </span>
+                  <br>
+                  <span class="html-tag html-indent">
+                    &lt;div&gt;
+                  </span>
+                  <span class="html-content">content</span>
+                  <span class="html-tag">&lt;/div&gt;</span>
+                  <br>
+                  <span class="html-tag">&lt;/div&gt;</span>
+                </p>
+              </div>
+            </article>
+            <article class="article-guide">
+              <h3>Change both direction and timing.</h3>
+              <div class="tag-box-scrollable">
+                <p class="tag-box" style="width: 820px;">
+                  <span class="html-tag">
+                    &lt;div
+                    <span class="html-class">class</span><span class="html-equals">=</span><span class="html-classname">
+                      "jaszanimatr__fade-out&nbsp;&nbsp;jaszanimatr__direction--bottom&nbsp;&nbsp;.jaszanimatr__timing--ease-out"
+                    </span>
+                    &gt;
+                  </span>
+                  <br>
+                  <span class="html-tag html-indent">
+                    &lt;div&gt;
+                  </span>
+                  <span class="html-content">content</span>
+                  <span class="html-tag">&lt;/div&gt;</span>
+                  <br>
+                  <span class="html-tag">&lt;/div&gt;</span>
+                </p>
+              </div>
+            </article>
+            <article class="article-guide">
+              <h3>Change direction, timing and speed.</h3>
+              <div class="tag-box-scrollable">
+                <p class="tag-box" style="width: 1040px;">
+                  <span class="html-tag">
+                    &lt;div
+                    <span class="html-class">class</span><span class="html-equals">=</span><span class="html-classname">
+                      "jaszanimatr__fade-out&nbsp;&nbsp;jaszanimatr__direction--bottom&nbsp;&nbsp;.jaszanimatr__timing--ease-out&nbsp;&nbsp;.jaszanimatr__speed--faster"
+                    </span>
+                    &gt;
+                  </span>
+                  <br>
+                  <span class="html-tag html-indent">
+                    &lt;div&gt;
+                  </span>
+                  <span class="html-content">content</span>
+                  <span class="html-tag">&lt;/div&gt;</span>
+                  <br>
+                  <span class="html-tag">&lt;/div&gt;</span>
+                </p>
+              </div>
+            </article>
+            <article class="article-guide">
+              <h3>Customize animation speed by changing the animation duration value.</h3>
+              <div class="tag-box-scrollable">
+                <p class="tag-box">
+                  <span class="html-classname">.jaszanimatr__fade-out</span>
+                  {<br>
+                  &nbsp;&nbsp;&nbsp;&nbsp;<span class="html-tag">animation-duration</span>
+                  :&nbsp;<span class="html-class">3s</span>;<br>
+                  }
+                </p>
+              </div>
+            </article>
+            <article class="article-guide">
+              <h3>Customize animation delay by changing the animation delay value.</h3>
+              <div class="tag-box-scrollable">
+                <p class="tag-box">
+                  <span class="html-classname">.jaszanimatr__fade-out</span>
+                  {<br>
+                  &nbsp;&nbsp;&nbsp;&nbsp;<span class="html-tag">animation-delay</span>
+                  :&nbsp;<span class="html-class">2s</span>;<br>
+                  }
+                </p>
+              </div>
+            </article>
+          </div>
+          <!-- end of text fade guide -->
+          <!-- beginning of text tracking guide -->
+          <div class="text-tracking-guide hide-guide scrollable-guide">
+            <h2 class="guide-title">Text Tracking</h2>
+            <article class="article-guide">
+              <h3>Text content tracks out.</h3>
+              <p class="tag-box">
+                <span class="html-tag">
+                  &lt;div
+                  <span class="html-class">class</span><span class="html-equals">=</span><span class="html-classname">
+                    "jaszanimatr__text-tracking-out"
+                  </span>
+                  &gt;
+                </span>
+                <br>
+                <span class="html-content html-indent">text</span>
+                <br>
+                <span class="html-tag">&lt;/div&gt;</span>
+              </p>
+            </article>
+            <article class="article-guide">
+              <h3>Text content tracks in.</h3>
+              <p class="tag-box">
+                <span class="html-tag">
+                  &lt;div
+                  <span class="html-class">class</span><span class="html-equals">=</span><span class="html-classname">
+                    "jaszanimatr__text-tracking-in"
+                  </span>
+                  &gt;
+                </span>
+                <br>
+                <span class="html-content html-indent">text</span>
+                <br>
+                <span class="html-tag">&lt;/div&gt;</span>
+              </p>
+            </article>
+            <article class="article-guide">
+              <h3>Change the tracking direction by adding one of the classes from the following table. Center is the default value.</h3>
+              <div class="tag-box-scrollable">
+                <p class="tag-box" style="width: 620px;">
+                  <span class="html-tag">
+                    &lt;div
+                    <span class="html-class">class</span><span class="html-equals">=</span><span class="html-classname">
+                      "jaszanimatr__text-tracking-out&nbsp;&nbsp;jaszanimatr__direction--bottom"
+                    </span>
+                    &gt;
+                  </span>
+                  <br>
+                  <span class="html-content html-indent">text</span>
+                  <br>
+                  <span class="html-tag">&lt;/div&gt;</span>
+                </p>
+              </div>
+              <br>
+              <div class="animatr-modal__table">
+                <table class="animatr-modal__table-list">
+                  <tr>
+                    <th>Animation Direction</th>
+                    <th>Class Name</th>
+                  </tr>
+                  <tr>
+                    <td>Center</td>
+                    <td>.jaszanimatr__direction--center</td>
+                  </tr>
+                  <tr>
+                    <td>Top</td>
+                    <td>.jaszanimatr__direction--top</td>
+                  </tr>
+                  <tr>
+                    <td>Bottom</td>
+                    <td>.jaszanimatr__direction--bottom</td>
+                  </tr>
+                </table>
+              </div>
+            </article>
+            <article class="article-guide">
+              <h3>Change the tracking speed by adding one of the classes from the following table. Speed is normal by default.</h3>
+              <p class="tag-box">
+                <span class="html-tag">
+                  &lt;div
+                  <span class="html-class">class</span><span class="html-equals">=</span><span class="html-classname">
+                    "jaszanimatr__text-tracking-out&nbsp;&nbsp;jaszanimatr__speed--slow"
+                  </span>
+                  &gt;
+                </span>
+                <br>
+                <span class="html-content html-indent">text</span>
+                <br>
+                <span class="html-tag">&lt;/div&gt;</span>
+              </p>
+              <br>
+              <div class="animatr-modal__table">
+                <table class="animatr-modal__table-list">
+                  <tr>
+                    <th>Animation Speed</th>
+                    <th>Class Name</th>
+                    <th>Time</th>
+                  </tr>
+                  <tr>
+                    <td>Normal</td>
+                    <td>.jaszanimatr__speed--normal</td>
+                    <td>0.4s</td>
+                  </tr>
+                  <tr>
+                    <td>Slow</td>
+                    <td>.jaszanimatr__speed--slow</td>
+                    <td>0.6s</td>
+                  </tr>
+                  <tr>
+                    <td>Slower</td>
+                    <td>.jaszanimatr__speed--slower</td>
+                    <td>0.8s</td>
+                  </tr>
+                  <tr>
+                    <td>Slowest</td>
+                    <td>.jaszanimatr__speed--slowest</td>
+                    <td>1s</td>
+                  </tr>
+                  <tr>
+                    <td>Fast</td>
+                    <td>.jaszanimatr__speed--fast</td>
+                    <td>0.3s</td>
+                  </tr>
+                  <tr>
+                    <td>Faster</td>
+                    <td>.jaszanimatr__speed--faster</td>
+                    <td>0.2s</td>
+                  </tr>
+                  <tr>
+                    <td>Fastest</td>
+                    <td>.jaszanimatr__speed--fastest</td>
+                    <td>0.1s</td>
+                  </tr>
+                </table>
+              </div>
+            </article>
+            <article class="article-guide">
+              <h3>Add timing function by adding one of the classes from the following table. Timing function is cubic by default</h3>
+              <div class="tag-box-scrollable">
+                <p class="tag-box" style="width: 620px;">
+                  <span class="html-tag">
+                    &lt;div
+                    <span class="html-class">class</span><span class="html-equals">=</span><span class="html-classname">
+                      "jaszanimatr__text-tracking-out&nbsp;&nbsp;.jaszanimatr__timing--ease-out"
+                    </span>
+                    &gt;
+                  </span>
+                  <br>
+                  <span class="html-content html-indent">text</span>
+                  <br>
+                  <span class="html-tag">&lt;/div&gt;</span>
+                </p>
+              </div>
+              <br>
+              <div class="animatr-modal__table">
+                <table class="animatr-modal__table-list">
+                  <tr>
+                    <th>Track In Timing Function</th>
+                    <th>Class Name</th>
+                  </tr>
+                  <tr>
+                    <td>Ease</td>
+                    <td>.jaszanimatr__timing--ease</td>
+                  </tr>
+                  <tr>
+                    <td>Ease In</td>
+                    <td>.jaszanimatr__timing--ease-in</td>
+                  </tr>
+                  <tr>
+                    <td>Linear</td>
+                    <td>.jaszanimatr__timing--linear</td>
+                  </tr>
+                  <tr>
+                    <td>Cubic</td>
+                    <td>.jaszanimatr__timing--cubic</td>
+                  </tr>
+                </table>
+                <br>
+                <table class="animatr-modal__table-list">
+                  <tr>
+                    <th>Track Out Timing Function</th>
+                    <th>Class Name</th>
+                  </tr>
+                  <tr>
+                    <td>Ease</td>
+                    <td>.jaszanimatr__timing--ease</td>
+                  </tr>
+                  <tr>
+                    <td>Ease Out</td>
+                    <td>.jaszanimatr__timing--ease-out</td>
+                  </tr>
+                  <tr>
+                    <td>Linear</td>
+                    <td>.jaszanimatr__timing--linear</td>
+                  </tr>
+                  <tr>
+                    <td>Cubic</td>
+                    <td>.jaszanimatr__timing--cubic</td>
+                  </tr>
+                </table>
+              </div>
+            </article>
+            <article class="article-guide">
+              <h3>Change both direction and speed.</h3>
+              <div class="tag-box-scrollable">
+                <p class="tag-box" style="width: 840px;">
+                  <span class="html-tag">
+                    &lt;div
+                    <span class="html-class">class</span><span class="html-equals">=</span><span class="html-classname">
+                      "jaszanimatr__text-tracking-out&nbsp;&nbsp;jaszanimatr__direction--bottom&nbsp;&nbsp;jaszanimatr__speed--slow"
+                    </span>
+                    &gt;
+                  </span>
+                  <br>
+                  <span class="html-content html-indent">text</span>
+                  <br>
+                  <span class="html-tag">&lt;/div&gt;</span>
+                </p>
+              </div>
+            </article>
+            <article class="article-guide">
+              <h3>Change both direction and timing.</h3>
+              <div class="tag-box-scrollable">
+                <p class="tag-box" style="width: 880px;">
+                  <span class="html-tag">
+                    &lt;div
+                    <span class="html-class">class</span><span class="html-equals">=</span><span class="html-classname">
+                      "jaszanimatr__text-tracking-out&nbsp;&nbsp;jaszanimatr__direction--bottom&nbsp;&nbsp;.jaszanimatr__timing--ease-out"
+                    </span>
+                    &gt;
+                  </span>
+                  <br>
+                  <span class="html-content html-indent">text</span>
+                  <br>
+                  <span class="html-tag">&lt;/div&gt;</span>
+                </p>
+              </div>
+            </article>
+            <article class="article-guide">
+              <h3>Change direction, timing and speed.</h3>
+              <div class="tag-box-scrollable">
+                <p class="tag-box" style="width: 1090px;">
+                  <span class="html-tag">
+                    &lt;div
+                    <span class="html-class">class</span><span class="html-equals">=</span><span class="html-classname">
+                      "jaszanimatr__text-tracking-out&nbsp;&nbsp;jaszanimatr__direction--bottom&nbsp;&nbsp;.jaszanimatr__timing--ease-out&nbsp;&nbsp;.jaszanimatr__speed--slow"
+                    </span>
+                    &gt;
+                  </span>
+                  <br>
+                  <span class="html-content html-indent">text</span>
+                  <br>
+                  <span class="html-tag">&lt;/div&gt;</span>
+                </p>
+              </div>
+            </article>
+            <article class="article-guide">
+              <h3>Customize animation speed by changing the animation duration value.</h3>
+              <div class="tag-box-scrollable">
+                <p class="tag-box">
+                  <span class="html-classname">.jaszanimatr__text-tracking-out</span>
+                  {<br>
+                  &nbsp;&nbsp;&nbsp;&nbsp;<span class="html-tag">animation-duration</span>
+                  :&nbsp;<span class="html-class">3s</span>;<br>
+                  }
+                </p>
+              </div>
+            </article>
+            <article class="article-guide">
+              <h3>Customize animation delay by changing the animation delay value.</h3>
+              <div class="tag-box-scrollable">
+                <p class="tag-box">
+                  <span class="html-classname">.jaszanimatr__text-tracking-out</span>
+                  {<br>
+                  &nbsp;&nbsp;&nbsp;&nbsp;<span class="html-tag">animation-delay</span>
+                  :&nbsp;<span class="html-class">2s</span>;<br>
+                  }
+                </p>
+              </div>
+            </article>
+          </div>
+          <!-- end of text tracking guide -->
+          <!-- beginning of text focus guide -->
+          <div class="text-focus-guide hide-guide scrollable-guide">
+            <h2 class="guide-title">Text Focus</h2>
+            <article class="article-guide">
+              <h3>Adds a focus effect. Text content is set to blur by default.</h3>
+              <div class="tag-box-scrollable">
+                <p class="tag-box">
+                  <span class="html-tag">
+                    &lt;div
+                    <span class="html-class">class</span><span class="html-equals">=</span><span class="html-classname">
+                      "jaszanimatr__text-focus"
+                    </span>
+                    &gt;
+                  </span>
+                  <br>
+                  <span class="html-content html-indent">text</span>
+                  <br>
+                  <span class="html-tag">&lt;/div&gt;</span>
+                </p>
+              </div>
+            </article>
+            <article class="article-guide">
+              <h3>Change the focus speed by adding one of the classes from the following table. Speed is normal by default.</h3>
+              <div class="tag-box-scrollable">
+                <p class="tag-box">
+                  <span class="html-tag">
+                    &lt;div
+                    <span class="html-class">class</span><span class="html-equals">=</span><span class="html-classname">
+                      "jaszanimatr__text-focus&nbsp;&nbsp;jaszanimatr__speed--slowest"
+                    </span>
+                    &gt;
+                  </span>
+                  <br>
+                  <span class="html-content html-indent">text</span>
+                  <br>
+                  <span class="html-tag">&lt;/div&gt;</span>
+                </p>
+              </div>
+              <br>
+              <div class="animatr-modal__table">
+                <table class="animatr-modal__table-list">
+                  <tr>
+                    <th>Animation Speed</th>
+                    <th>Class Name</th>
+                    <th>Time</th>
+                  </tr>
+                  <tr>
+                    <td>Normal</td>
+                    <td>.jaszanimatr__speed--normal</td>
+                    <td>0.4s</td>
+                  </tr>
+                  <tr>
+                    <td>Slow</td>
+                    <td>.jaszanimatr__speed--slow</td>
+                    <td>0.6s</td>
+                  </tr>
+                  <tr>
+                    <td>Slower</td>
+                    <td>.jaszanimatr__speed--slower</td>
+                    <td>0.8s</td>
+                  </tr>
+                  <tr>
+                    <td>Slowest</td>
+                    <td>.jaszanimatr__speed--slowest</td>
+                    <td>1s</td>
+                  </tr>
+                  <tr>
+                    <td>Fast</td>
+                    <td>.jaszanimatr__speed--fast</td>
+                    <td>0.3s</td>
+                  </tr>
+                  <tr>
+                    <td>Faster</td>
+                    <td>.jaszanimatr__speed--faster</td>
+                    <td>0.2s</td>
+                  </tr>
+                  <tr>
+                    <td>Fastest</td>
+                    <td>.jaszanimatr__speed--fastest</td>
+                    <td>0.1s</td>
+                  </tr>
+                </table>
+              </div>
+            </article>
+            <article class="article-guide">
+              <h3>Add timing function by adding one of the classes from the following table. Timing function is cubic by default</h3>
+              <div class="tag-box-scrollable">
+                <p class="tag-box">
+                  <span class="html-tag">
+                    &lt;div
+                    <span class="html-class">class</span><span class="html-equals">=</span><span class="html-classname">
+                      "jaszanimatr__text-focus&nbsp;&nbsp;jaszanimatr__timing--ease-in"
+                    </span>
+                    &gt;
+                  </span>
+                  <br>
+                  <span class="html-content html-indent">text</span>
+                  <br>
+                  <span class="html-tag">&lt;/div&gt;</span>
+                </p>
+              </div>
+              <br>
+              <div class="animatr-modal__table">
+                <table class="animatr-modal__table-list">
+                  <tr>
+                    <th>Focus In Timing Function</th>
+                    <th>Class Name</th>
+                  </tr>
+                  <tr>
+                    <td>Ease</td>
+                    <td>.jaszanimatr__timing--ease</td>
+                  </tr>
+                  <tr>
+                    <td>Ease In</td>
+                    <td>.jaszanimatr__timing--ease-in</td>
+                  </tr>
+                  <tr>
+                    <td>Linear</td>
+                    <td>.jaszanimatr__timing--linear</td>
+                  </tr>
+                  <tr>
+                    <td>Cubic</td>
+                    <td>.jaszanimatr__timing--cubic</td>
+                  </tr>
+                </table>
+              </div>
+            </article>
+            <article class="article-guide">
+              <h3>Change both timing and speed.</h3>
+              <div class="tag-box-scrollable">
+                <p class="tag-box" style="width: 770px;">
+                  <span class="html-tag">
+                    &lt;div
+                    <span class="html-class">class</span><span class="html-equals">=</span><span class="html-classname">
+                      "jaszanimatr__text-focus&nbsp;&nbsp;jaszanimatr__timing--ease-in&nbsp;&nbsp;jaszanimatr__speed--slow"
+                    </span>
+                    &gt;
+                  </span>
+                  <br>
+                  <span class="html-content html-indent">text</span>
+                  <br>
+                  <span class="html-tag">&lt;/div&gt;</span>
+                </p>
+              </div>
+            </article>
+            <article class="article-guide">
+              <h3>Customize animation speed by changing the animation duration value.</h3>
+              <div class="tag-box-scrollable">
+                <p class="tag-box">
+                  <span class="html-classname">.jaszanimatr__text-focus</span>
+                  {<br>
+                  &nbsp;&nbsp;&nbsp;&nbsp;<span class="html-tag">animation-duration</span>
+                  :&nbsp;<span class="html-class">3s</span>;<br>
+                  }
+                </p>
+              </div>
+            </article>
+            <article class="article-guide">
+              <h3>Customize animation delay by changing the animation delay value.</h3>
+              <div class="tag-box-scrollable">
+                <p class="tag-box">
+                  <span class="html-classname">.jaszanimatr__text-focus</span>
+                  {<br>
+                  &nbsp;&nbsp;&nbsp;&nbsp;<span class="html-tag">animation-delay</span>
+                  :&nbsp;<span class="html-class">2s</span>;<br>
+                  }
+                </p>
+              </div>
+            </article>
+          </div>
+          <!-- end of text focus guide -->
+          <!-- beginning of text blur guide -->
+          <div class="text-blur-guide hide-guide scrollable-guide">
+            <h2 class="guide-title">Text Blur</h2>
+            <article class="article-guide">
+              <h3>Adds a blur effect to text content.</h3>
+              <p class="tag-box" style="width: 720px;">
+                <span class="html-tag">
+                  &lt;div
+                  <span class="html-class">class</span><span class="html-equals">=</span><span class="html-classname">
+                    "jaszanimatr__text-blur"
+                  </span>
+                  &gt;
+                </span>
+                <br>
+                <span class="html-content html-indent">text</span>
+                <br>
+                <span class="html-tag">&lt;/div&gt;</span>
+              </p>
+            </article>
+            <article class="article-guide">
+              <h3>Change the blur speed by adding one of the classes from the following table. Speed is normal by default.</h3>
+              <div class="tag-box-scrollable">
+                <p class="tag-box">
+                  <span class="html-tag">
+                    &lt;div
+                    <span class="html-class">class</span><span class="html-equals">=</span><span class="html-classname">
+                      "jaszanimatr__text-blur&nbsp;&nbsp;jaszanimatr__speed--slowest"
+                    </span>
+                    &gt;
+                  </span>
+                  <br>
+                  <span class="html-content html-indent">text</span>
+                  <br>
+                  <span class="html-tag">&lt;/div&gt;</span>
+                </p>
+              </div>
+              <br>
+              <div class="animatr-modal__table">
+                <table class="animatr-modal__table-list">
+                  <tr>
+                    <th>Animation Speed</th>
+                    <th>Class Name</th>
+                    <th>Time</th>
+                  </tr>
+                  <tr>
+                    <td>Normal</td>
+                    <td>.jaszanimatr__speed--normal</td>
+                    <td>0.4s</td>
+                  </tr>
+                  <tr>
+                    <td>Slow</td>
+                    <td>.jaszanimatr__speed--slow</td>
+                    <td>0.6s</td>
+                  </tr>
+                  <tr>
+                    <td>Slower</td>
+                    <td>.jaszanimatr__speed--slower</td>
+                    <td>0.8s</td>
+                  </tr>
+                  <tr>
+                    <td>Slowest</td>
+                    <td>.jaszanimatr__speed--slowest</td>
+                    <td>1s</td>
+                  </tr>
+                  <tr>
+                    <td>Fast</td>
+                    <td>.jaszanimatr__speed--fast</td>
+                    <td>0.3s</td>
+                  </tr>
+                  <tr>
+                    <td>Faster</td>
+                    <td>.jaszanimatr__speed--faster</td>
+                    <td>0.2s</td>
+                  </tr>
+                  <tr>
+                    <td>Fastest</td>
+                    <td>.jaszanimatr__speed--fastest</td>
+                    <td>0.1s</td>
+                  </tr>
+                </table>
+              </div>
+            </article>
+            <article class="article-guide">
+              <h3>Add timing function by adding one of the classes from the following table. Timing function is cubic by default</h3>
+              <div class="tag-box-scrollable">
+                <p class="tag-box">
+                  <span class="html-tag">
+                    &lt;div
+                    <span class="html-class">class</span><span class="html-equals">=</span><span class="html-classname">
+                      "jaszanimatr__text-blur&nbsp;&nbsp;jaszanimatr__timing--ease-out"
+                    </span>
+                    &gt;
+                  </span>
+                  <br>
+                  <span class="html-content html-indent">text</span>
+                  <br>
+                  <span class="html-tag">&lt;/div&gt;</span>
+                </p>
+              </div>
+              <br>
+              <div class="animatr-modal__table">
+                <table class="animatr-modal__table-list">
+                  <tr>
+                    <th>Track Out Timing Function</th>
+                    <th>Class Name</th>
+                  </tr>
+                  <tr>
+                    <td>Ease</td>
+                    <td>.jaszanimatr__timing--ease</td>
+                  </tr>
+                  <tr>
+                    <td>Ease Out</td>
+                    <td>.jaszanimatr__timing--ease-out</td>
+                  </tr>
+                  <tr>
+                    <td>Linear</td>
+                    <td>.jaszanimatr__timing--linear</td>
+                  </tr>
+                  <tr>
+                    <td>Cubic</td>
+                    <td>.jaszanimatr__timing--cubic</td>
+                  </tr>
+                </table>
+              </div>
+            </article>
+            <article class="article-guide">
+              <h3>Change both timing and speed.</h3>
+              <div class="tag-box-scrollable">
+                <p class="tag-box" style="width: 770px;">
+                  <span class="html-tag">
+                    &lt;div
+                    <span class="html-class">class</span><span class="html-equals">=</span><span class="html-classname">
+                      "jaszanimatr__text-blur&nbsp;&nbsp;jaszanimatr__timing--ease-out&nbsp;&nbsp;jaszanimatr__speed--slow"
+                    </span>
+                    &gt;
+                  </span>
+                  <br>
+                  <span class="html-content html-indent">text</span>
+                  <br>
+                  <span class="html-tag">&lt;/div&gt;</span>
+                </p>
+              </div>
+            </article>
+            <article class="article-guide">
+              <h3>Customize animation speed by changing the animation duration value.</h3>
+              <div class="tag-box-scrollable">
+                <p class="tag-box">
+                  <span class="html-classname">.jaszanimatr__text-blur</span>
+                  {<br>
+                  &nbsp;&nbsp;&nbsp;&nbsp;<span class="html-tag">animation-duration</span>
+                  :&nbsp;<span class="html-class">3s</span>;<br>
+                  }
+                </p>
+              </div>
+            </article>
+            <article class="article-guide">
+              <h3>Customize animation delay by changing the animation delay value.</h3>
+              <div class="tag-box-scrollable">
+                <p class="tag-box">
+                  <span class="html-classname">.jaszanimatr__text-blur</span>
+                  {<br>
+                  &nbsp;&nbsp;&nbsp;&nbsp;<span class="html-tag">animation-delay</span>
+                  :&nbsp;<span class="html-class">2s</span>;<br>
+                  }
+                </p>
+              </div>
+            </article>
+          </div>
+          <!-- end of text blur guide -->
+          <!-- beginning of text shadow guide -->
+          <div class="text-shadow-guide hide-guide scrollable-guide">
+            <h2 class="guide-title">Text Shadow</h2>
+            <article class="article-guide">
+              <h3>Text shadow fades out.</h3>
+              <p class="tag-box">
+                <span class="html-tag">
+                  &lt;div
+                  <span class="html-class">class</span><span class="html-equals">=</span><span class="html-classname">
+                    "jaszanimatr__text-shadow-in"
+                  </span>
+                  &gt;
+                </span>
+                <br>
+                <span class="html-content html-indent">text</span>
+                <br>
+                <span class="html-tag">&lt;/div&gt;</span>
+              </p>
+            </article>
+            <article class="article-guide">
+              <h3>Text shadow fades in.</h3>
+              <p class="tag-box">
+                <span class="html-tag">
+                  &lt;div
+                  <span class="html-class">class</span><span class="html-equals">=</span><span class="html-classname">
+                    "jaszanimatr__text-shadow-out"
+                  </span>
+                  &gt;
+                </span>
+                <br>
+                <span class="html-content html-indent">text</span>
+                <br>
+                <span class="html-tag">&lt;/div&gt;</span>
+              </p>
+            </article>
+            <article class="article-guide">
+              <h3>Change the shadow's fade-out direction by adding one of the classes from the following table. Center is the default value.</h3>
+              <div class="tag-box-scrollable">
+                <p class="tag-box" style="width: 620px;">
+                  <span class="html-tag">
+                    &lt;div
+                    <span class="html-class">class</span><span class="html-equals">=</span><span class="html-classname">
+                      "jaszanimatr__text-shadow-in&nbsp;&nbsp;jaszanimatr__direction--left"
+                    </span>
+                    &gt;
+                  </span>
+                  <br>
+                  <span class="html-content html-indent">text</span>
+                  <br>
+                  <span class="html-tag">&lt;/div&gt;</span>
+                </p>
+              </div>
+              <br>
+              <div class="animatr-modal__table">
+                <table class="animatr-modal__table-list">
+                  <tr>
+                    <th>Animation Direction</th>
+                    <th>Class Name</th>
+                  </tr>
+                  <tr>
+                    <td>Center</td>
+                    <td>.jaszanimatr__direction--center</td>
+                  </tr>
+                  <tr>
+                    <td>Top</td>
+                    <td>.jaszanimatr__direction--top</td>
+                  </tr>
+                  <tr>
+                    <td>Right</td>
+                    <td>.jaszanimatr__direction--right</td>
+                  </tr>
+                  <tr>
+                    <td>Bottom</td>
+                    <td>.jaszanimatr__direction--bottom</td>
+                  </tr>
+                  <tr>
+                    <td>Left</td>
+                    <td>.jaszanimatr__direction--left</td>
+                  </tr>
+                </table>
+              </div>
+            </article>
+            <article class="article-guide">
+              <h3>Change the shadow's fade-out speed by adding one of the classes from the following table. Speed is normal by default.</h3>
+              <p class="tag-box">
+                <span class="html-tag">
+                  &lt;div
+                  <span class="html-class">class</span><span class="html-equals">=</span><span class="html-classname">
+                    "jaszanimatr__text-shadow-in&nbsp;&nbsp;jaszanimatr__speed--faster"
+                  </span>
+                  &gt;
+                </span>
+                <br>
+                <span class="html-content html-indent">text</span>
+                <br>
+                <span class="html-tag">&lt;/div&gt;</span>
+              </p>
+              <br>
+              <div class="animatr-modal__table">
+                <table class="animatr-modal__table-list">
+                  <tr>
+                    <th>Animation Speed</th>
+                    <th>Class Name</th>
+                    <th>Time</th>
+                  </tr>
+                  <tr>
+                    <td>Normal</td>
+                    <td>.jaszanimatr__speed--normal</td>
+                    <td>0.4s</td>
+                  </tr>
+                  <tr>
+                    <td>Slow</td>
+                    <td>.jaszanimatr__speed--slow</td>
+                    <td>0.6s</td>
+                  </tr>
+                  <tr>
+                    <td>Slower</td>
+                    <td>.jaszanimatr__speed--slower</td>
+                    <td>0.8s</td>
+                  </tr>
+                  <tr>
+                    <td>Slowest</td>
+                    <td>.jaszanimatr__speed--slowest</td>
+                    <td>1s</td>
+                  </tr>
+                  <tr>
+                    <td>Fast</td>
+                    <td>.jaszanimatr__speed--fast</td>
+                    <td>0.3s</td>
+                  </tr>
+                  <tr>
+                    <td>Faster</td>
+                    <td>.jaszanimatr__speed--faster</td>
+                    <td>0.2s</td>
+                  </tr>
+                  <tr>
+                    <td>Fastest</td>
+                    <td>.jaszanimatr__speed--fastest</td>
+                    <td>0.1s</td>
+                  </tr>
+                </table>
+              </div>
+            </article>
+            <article class="article-guide">
+              <h3>Add timing function by adding one of the classes from the following table. Timing function is cubic by default</h3>
+              <div class="tag-box-scrollable">
+                <p class="tag-box" style="width: 620px;">
+                  <span class="html-tag">
+                    &lt;div
+                    <span class="html-class">class</span><span class="html-equals">=</span><span class="html-classname">
+                      "jaszanimatr__text-shadow-in&nbsp;&nbsp;.jaszanimatr__timing--ease-out"
+                    </span>
+                    &gt;
+                  </span>
+                  <br>
+                  <span class="html-content html-indent">text</span>
+                  <br>
+                  <span class="html-tag">&lt;/div&gt;</span>
+                </p>
+              </div>
+              <br>
+              <div class="animatr-modal__table">
+                <table class="animatr-modal__table-list">
+                  <tr>
+                    <th>Text Shadow-In Timing Function</th>
+                    <th>Class Name</th>
+                  </tr>
+                  <tr>
+                    <td>Ease</td>
+                    <td>.jaszanimatr__timing--ease</td>
+                  </tr>
+                  <tr>
+                    <td>Ease In</td>
+                    <td>.jaszanimatr__timing--ease-in</td>
+                  </tr>
+                  <tr>
+                    <td>Linear</td>
+                    <td>.jaszanimatr__timing--linear</td>
+                  </tr>
+                  <tr>
+                    <td>Cubic</td>
+                    <td>.jaszanimatr__timing--cubic</td>
+                  </tr>
+                </table>
+                <br>
+                <table class="animatr-modal__table-list">
+                  <tr>
+                    <th>Text Shadow-Out Timing Function</th>
+                    <th>Class Name</th>
+                  </tr>
+                  <tr>
+                    <td>Ease</td>
+                    <td>.jaszanimatr__timing--ease</td>
+                  </tr>
+                  <tr>
+                    <td>Ease Out</td>
+                    <td>.jaszanimatr__timing--ease-out</td>
+                  </tr>
+                  <tr>
+                    <td>Linear</td>
+                    <td>.jaszanimatr__timing--linear</td>
+                  </tr>
+                  <tr>
+                    <td>Cubic</td>
+                    <td>.jaszanimatr__timing--cubic</td>
+                  </tr>
+                </table>
+              </div>
+            </article>
+            <article class="article-guide">
+              <h3>Change both direction and speed.</h3>
+              <div class="tag-box-scrollable">
+                <p class="tag-box" style="width: 800px;">
+                  <span class="html-tag">
+                    &lt;div
+                    <span class="html-class">class</span><span class="html-equals">=</span><span class="html-classname">
+                      "jaszanimatr__text-shadow-in&nbsp;&nbsp;jaszanimatr__direction--left&nbsp;&nbsp;jaszanimatr__speed--faster"
+                    </span>
+                    &gt;
+                  </span>
+                  <br>
+                  <span class="html-content html-indent">text</span>
+                  <br>
+                  <span class="html-tag">&lt;/div&gt;</span>
+                </p>
+              </div>
+            </article>
+            <article class="article-guide">
+              <h3>Change both direction and timing.</h3>
+              <div class="tag-box-scrollable">
+                <p class="tag-box" style="width: 830px;">
+                  <span class="html-tag">
+                    &lt;div
+                    <span class="html-class">class</span><span class="html-equals">=</span><span class="html-classname">
+                      "jaszanimatr__text-shadow-in&nbsp;&nbsp;jaszanimatr__direction--left&nbsp;&nbsp;.jaszanimatr__timing--ease-out"
+                    </span>
+                    &gt;
+                  </span>
+                  <br>
+                  <span class="html-content html-indent">text</span>
+                  <br>
+                  <span class="html-tag">&lt;/div&gt;</span>
+                </p>
+              </div>
+            </article>
+            <article class="article-guide">
+              <h3>Change direction, timing and speed.</h3>
+              <div class="tag-box-scrollable">
+                <p class="tag-box" style="width: 1060px;">
+                  <span class="html-tag">
+                    &lt;div
+                    <span class="html-class">class</span><span class="html-equals">=</span><span class="html-classname">
+                      "jaszanimatr__text-shadow-in&nbsp;&nbsp;jaszanimatr__direction--left&nbsp;&nbsp;.jaszanimatr__timing--ease-out&nbsp;&nbsp;.jaszanimatr__speed--faster"
+                    </span>
+                    &gt;
+                  </span>
+                  <br>
+                  <span class="html-content html-indent">text</span>
+                  <br>
+                  <span class="html-tag">&lt;/div&gt;</span>
+                </p>
+              </div>
+            </article>
+            <article class="article-guide">
+              <h3>Customize animation speed by changing the animation duration value.</h3>
+              <div class="tag-box-scrollable">
+                <p class="tag-box">
+                  <span class="html-classname">.jaszanimatr__text-shadow-in</span>
+                  {<br>
+                  &nbsp;&nbsp;&nbsp;&nbsp;<span class="html-tag">animation-duration</span>
+                  :&nbsp;<span class="html-class">3s</span>;<br>
+                  }
+                </p>
+              </div>
+            </article>
+            <article class="article-guide">
+              <h3>Customize animation delay by changing the animation delay value.</h3>
+              <div class="tag-box-scrollable">
+                <p class="tag-box">
+                  <span class="html-classname">.jaszanimatr__text-shadow-in</span>
+                  {<br>
+                  &nbsp;&nbsp;&nbsp;&nbsp;<span class="html-tag">animation-delay</span>
+                  :&nbsp;<span class="html-class">2s</span>;<br>
+                  }
+                </p>
+              </div>
+            </article>
+          </div>
+          <!-- end of text shadow guide -->
+        </div>
+      </div>
+    </section>
+    <!-- End Guide Modal Section -->
+    <!-- Start Alert Section -->
+    <section class="animatr-alert animatr-alert__toast">
+      <div class="animatr-alert__wrapper">
+        <p class="animatr-alert__toast-text"></p>
+      </div>
+    </section>
+    <!-- End Alert Section -->
+  </div>
+  <script src="js/elementAnimatr.js"></script>
+  <script src="js/cssPropertyOutput.js" type="text/javascript"></script>
+  <script src="js/keyframePropertyOutput.js" type="text/javascript"></script>
+  <script src="js/copyToClipboard.js" type="text/javascript"></script>
+  <script src="js/modalGuide.js"></script>
+  <script src="js/modal.js"></script>
+</body>
+</html>

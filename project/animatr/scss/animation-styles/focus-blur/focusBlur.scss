@@ -1,0 +1,8 @@
+@import 'focus';
+@import 'blur';
+@import '../speed';
+@import '../timing';
+
+.text-wrapper.fcs p {
+  color: #555555 !important;
+}

@@ -1,0 +1,84 @@
+/**
+ *
+ * text-tracking-in class
+ *
+*/
+.jaszanimatr__text-tracking-in {
+  animation: text-tracking-in-center 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+
+  &.jaszanimatr__direction--center {
+    animation-name: text-tracking-in-center;
+  }
+
+  &.jaszanimatr__direction--top {
+    animation-name: text-tracking-in-top;
+  }
+
+  &.jaszanimatr__direction--bottom {
+    animation-name: text-tracking-in-bottom;
+  }
+}
+
+/**
+ *
+ * animation text-tracking-in-center
+ *
+*/
+@keyframes text-tracking-in-center {
+  0% {
+    letter-spacing: -0.5em;
+    opacity: 0;
+  }
+
+  40% {
+    opacity: 0.6;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+/**
+ *
+ * animation text-tracking-in-top
+ *
+*/
+@keyframes text-tracking-in-top {
+  0% {
+    letter-spacing: -0.5em;
+    transform: translateZ(-100px) translateY(-100px);
+    opacity: 0;
+  }
+
+  40% {
+    opacity: 0.6;
+  }
+
+  100% {
+    transform: translateZ(0) translateY(0);
+    opacity: 1;
+  }
+}
+
+/**
+ *
+ * animation text-tracking-in-bottom
+ *
+ */
+@keyframes text-tracking-in-bottom {
+  0% {
+    letter-spacing: -0.5em;
+    transform: translateZ(100px) translateY(100px);
+    opacity: 0;
+  }
+
+  40% {
+    opacity: 0.6;
+  }
+
+  100% {
+    transform: translateZ(0) translateY(0);
+    opacity: 1;
+  }
+}

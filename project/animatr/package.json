@@ -1,0 +1,26 @@
+{
+  "devDependencies": {
+    "eslint": "^7.22.0",
+    "eslint-config-airbnb-base": "^14.2.1",
+    "eslint-plugin-import": "^2.22.1",
+    "postcss": "^8.4.5",
+    "postcss-scss": "^4.0.2",
+    "stylelint": "^14.8.2",
+    "stylelint-config-standard": "^24.0.0",
+    "stylelint-config-standard-scss": "^3.0.0"
+  },
+  "name": "animation",
+  "version": "1.0.0",
+  "main": ".eslintrc.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "sass": "sass ./scss/animation-styles/fade/_fadeOut.scss ./css/animation-styles/fade/fadeOut.css --watch"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "sass": "^1.52.1"
+  }
+}

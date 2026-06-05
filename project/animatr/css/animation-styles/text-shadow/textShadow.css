@@ -1,0 +1,269 @@
+/**
+ *
+ * text-shadow-in class
+ *
+*/
+.jaszanimatr__text-shadow-in {
+  animation: text-shadow-in-center 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+}
+
+.jaszanimatr__text-shadow-in.jaszanimatr__direction--center {
+  animation-name: text-shadow-in-center;
+}
+
+.jaszanimatr__text-shadow-in.jaszanimatr__direction--top {
+  animation-name: text-shadow-in-top;
+}
+
+.jaszanimatr__text-shadow-in.jaszanimatr__direction--right {
+  animation-name: text-shadow-in-right;
+}
+
+.jaszanimatr__text-shadow-in.jaszanimatr__direction--bottom {
+  animation-name: text-shadow-in-bottom;
+}
+
+.jaszanimatr__text-shadow-in.jaszanimatr__direction--left {
+  animation-name: text-shadow-in-left;
+}
+
+/**
+ *
+ * animation text shadow center
+ *
+*/
+@keyframes text-shadow-in-center {
+  0% {
+    text-shadow: 0 0 0 rgb(0 0 0 / 0%);
+  }
+
+  100% {
+    text-shadow: 0 0 8px rgb(0 0 0 / 100%);
+  }
+}
+
+/**
+ *
+ * animation text shadow top
+ *
+*/
+@keyframes text-shadow-in-top {
+  0% {
+    text-shadow: 0 0 0 rgb(0 0 0 / 0%);
+  }
+
+  100% {
+    text-shadow: 0 -3px 8px rgb(0 0 0 / 100%);
+  }
+}
+
+/**
+ *
+ * animation text shadow right
+ *
+*/
+@keyframes text-shadow-in-right {
+  0% {
+    text-shadow: 0 0 0 rgb(0 0 0 / 0%);
+  }
+
+  100% {
+    text-shadow: 3px 0 8px rgb(0 0 0 / 100%);
+  }
+}
+
+/**
+ *
+ * animation text shadow bottom
+ *
+*/
+@keyframes text-shadow-in-bottom {
+  0% {
+    text-shadow: 0 0 0 rgb(0 0 0 / 0%);
+  }
+
+  100% {
+    text-shadow: 0 3px 8px rgb(0 0 0 / 100%);
+  }
+}
+
+/**
+ *
+ * animation text shadow left
+ *
+*/
+@keyframes text-shadow-in-left {
+  0% {
+    text-shadow: 0 0 0 rgb(0 0 0 / 0%);
+  }
+
+  100% {
+    text-shadow: -3px 0 8px rgb(0 0 0 / 100%);
+  }
+}
+
+/**
+ *
+ * text-shadow-out class
+ *
+*/
+.jaszanimatr__text-shadow-out {
+  animation: text-shadow-out-center 0.4s cubic-bezier(0.55, 0.085, 0.68, 0.53) both;
+}
+
+.jaszanimatr__text-shadow-out.jaszanimatr__direction--center {
+  animation-name: text-shadow-out-center;
+}
+
+.jaszanimatr__text-shadow-out.jaszanimatr__direction--top {
+  animation-name: text-shadow-out-top;
+}
+
+.jaszanimatr__text-shadow-out.jaszanimatr__direction--right {
+  animation-name: text-shadow-out-right;
+}
+
+.jaszanimatr__text-shadow-out.jaszanimatr__direction--bottom {
+  animation-name: text-shadow-out-bottom;
+}
+
+.jaszanimatr__text-shadow-out.jaszanimatr__direction--left {
+  animation-name: text-shadow-out-left;
+}
+
+/**
+ *
+ * animation text shadow center
+ *
+*/
+@keyframes text-shadow-out-center {
+  0% {
+    text-shadow: 0 0 8px rgb(0 0 0 / 100%);
+  }
+
+  100% {
+    text-shadow: 0 0 0 rgb(0 0 0 / 0%);
+  }
+}
+
+/**
+ *
+ * animation text shadow top
+ *
+*/
+@keyframes text-shadow-out-top {
+  0% {
+    text-shadow: 0 -3px 8px rgb(0 0 0 / 100%);
+  }
+
+  100% {
+    text-shadow: 0 0 0 rgb(0 0 0 / 0%);
+  }
+}
+
+/**
+ *
+ * animation text shadow right
+ *
+*/
+@keyframes text-shadow-out-right {
+  0% {
+    text-shadow: 3px 0 8px rgb(0 0 0 / 100%);
+  }
+
+  100% {
+    text-shadow: 0 0 0 rgb(0 0 0 / 0%);
+  }
+}
+
+/**
+ *
+ * animation text shadow bottom
+ *
+*/
+@keyframes text-shadow-out-bottom {
+  0% {
+    text-shadow: 0 3px 8px rgb(0 0 0 / 100%);
+  }
+
+  100% {
+    text-shadow: 0 0 0 rgb(0 0 0 / 0%);
+  }
+}
+
+/**
+ *
+ * animation text shadow left
+ *
+*/
+@keyframes text-shadow-out-left {
+  0% {
+    text-shadow: -3px 0 8px rgb(0 0 0 / 100%);
+  }
+
+  100% {
+    text-shadow: 0 0 0 rgb(0 0 0 / 0%);
+  }
+}
+
+/**
+ *
+ * Animation speed classes
+ *
+*/
+.jaszanimatr__speed--normal {
+  animation-duration: 0.4s;
+}
+
+.jaszanimatr__speed--slow {
+  animation-duration: 0.6s;
+}
+
+.jaszanimatr__speed--slower {
+  animation-duration: 0.8s;
+}
+
+.jaszanimatr__speed--slowest {
+  animation-duration: 1s;
+}
+
+.jaszanimatr__speed--fast {
+  animation-duration: 0.3s;
+}
+
+.jaszanimatr__speed--faster {
+  animation-duration: 0.2s;
+}
+
+.jaszanimatr__speed--fastest {
+  animation-duration: 0.1s;
+}
+
+/**
+ *
+ * Animation Timing classes
+ *
+*/
+.jaszanimatr__timing--ease {
+  animation-timing-function: ease;
+}
+
+.jaszanimatr__timing--ease-out {
+  animation-timing-function: ease-out;
+}
+
+.jaszanimatr__timing--ease-in {
+  animation-timing-function: ease-in;
+}
+
+.jaszanimatr__timing--ease-in-out {
+  animation-timing-function: ease-in-out;
+}
+
+.jaszanimatr__timing--linear {
+  animation-timing-function: linear;
+}
+
+.jaszanimatr__timing--cubic {
+  animation-timing-function: cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}

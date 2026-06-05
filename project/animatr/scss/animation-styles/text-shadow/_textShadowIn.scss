@@ -1,0 +1,103 @@
+/**
+ *
+ * text-shadow-in class
+ *
+*/
+.jaszanimatr__text-shadow-in {
+  animation: text-shadow-in-center 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+
+  &.jaszanimatr__direction--center {
+    animation-name: text-shadow-in-center;
+  }
+
+  &.jaszanimatr__direction--top {
+    animation-name: text-shadow-in-top;
+  }
+
+  &.jaszanimatr__direction--right {
+    animation-name: text-shadow-in-right;
+  }
+
+  &.jaszanimatr__direction--bottom {
+    animation-name: text-shadow-in-bottom;
+  }
+
+  &.jaszanimatr__direction--left {
+    animation-name: text-shadow-in-left;
+  }
+}
+
+/**
+ *
+ * animation text shadow center
+ *
+*/
+@keyframes text-shadow-in-center {
+  0% {
+    text-shadow: 0 0 0 rgb(0 0 0 / 0%);
+  }
+
+  100% {
+    text-shadow: 0 0 8px rgb(0 0 0 / 100%);
+  }
+}
+
+/**
+ *
+ * animation text shadow top
+ *
+*/
+@keyframes text-shadow-in-top {
+  0% {
+    text-shadow: 0 0 0 rgb(0 0 0 / 0%);
+  }
+
+  100% {
+    text-shadow: 0 -3px 8px rgb(0 0 0 / 100%);
+  }
+}
+
+/**
+ *
+ * animation text shadow right
+ *
+*/
+@keyframes text-shadow-in-right {
+  0% {
+    text-shadow: 0 0 0 rgb(0 0 0 / 0%);
+  }
+
+  100% {
+    text-shadow: 3px 0 8px rgb(0 0 0 / 100%);
+  }
+}
+
+/**
+ *
+ * animation text shadow bottom
+ *
+*/
+@keyframes text-shadow-in-bottom {
+  0% {
+    text-shadow: 0 0 0 rgb(0 0 0 / 0%);
+  }
+
+  100% {
+    text-shadow: 0 3px 8px rgb(0 0 0 / 100%);
+  }
+}
+
+/**
+ *
+ * animation text shadow left
+ *
+*/
+@keyframes text-shadow-in-left {
+  0% {
+    text-shadow: 0 0 0 rgb(0 0 0 / 0%);
+  }
+
+  100% {
+    text-shadow: -3px 0 8px rgb(0 0 0 / 100%);
+  }
+}

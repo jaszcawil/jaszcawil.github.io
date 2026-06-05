@@ -1,0 +1,93 @@
+.animatr {
+  &-modal {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.50);
+
+    &__wrapper {
+      width: 640px;
+      max-height: 720px;
+      padding: 16px;
+      background-color: #FFFFFF;
+      border-radius: 4px;
+    }
+
+    &__top {
+      position: relative;
+      display: flex;
+    }
+
+    &__close-button {
+      position: absolute;
+      top: -24px;
+      right: -24px;
+      padding: 0;
+      background-color: transparent !important;
+      border: none;
+
+      i {
+        margin: 0;
+        color: #0068B7;
+        font-size: 24px;
+        background-color: #FFFFFF !important;
+        border-radius: 100%;
+      }
+    }
+
+    &.hide {
+      animation: hide-modal 0.1s cubic-bezier(0.250, 0.460, 0.450, 0.940) 0.2s both;
+    }
+
+    &__content { 
+      color: #808080;
+      padding-bottom: 8px;
+    }
+
+    &__title { 
+      font-size: 16px;
+    }
+
+    &__table {
+      border-collapse: collapse;
+      width: 100%;
+
+     th, td {
+        border: 1px solid #DDDDDD;
+        text-align: left;
+        padding: 8px;
+        text-decoration: none;
+      }
+
+      a {
+        text-decoration: none;
+        color: #0A1172;
+      }
+    }
+    
+    &__table-list {
+      width: 100%;
+    }
+    
+    &__download-repo {
+      padding: 8px;
+    }
+  }
+}
+
+@keyframes hide-modal {
+  0% {
+    opacity: 1;
+    visibility: visible;
+  }
+
+  100% {
+    opacity: 0;
+    visibility: hidden;
+  }
+}

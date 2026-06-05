@@ -1,0 +1,80 @@
+.animatr-modal {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.animatr-modal__wrapper {
+  width: 640px;
+  max-height: 720px;
+  padding: 16px;
+  background-color: #FFFFFF;
+  border-radius: 4px;
+}
+.animatr-modal__top {
+  position: relative;
+  display: flex;
+}
+.animatr-modal__close-button {
+  position: absolute;
+  top: -24px;
+  right: -24px;
+  padding: 0;
+  background-color: transparent !important;
+  border: none;
+}
+.animatr-modal__close-button i {
+  margin: 0;
+  color: #0068B7;
+  font-size: 24px;
+  background-color: #FFFFFF !important;
+  border-radius: 100%;
+}
+.animatr-modal.hide {
+  animation: hide-modal 0.1s cubic-bezier(0.25, 0.46, 0.45, 0.94) 0.2s both;
+}
+.animatr-modal__content {
+  color: #808080;
+  padding-bottom: 8px;
+}
+.animatr-modal__title {
+  font-size: 16px;
+}
+.animatr-modal__table {
+  border-collapse: collapse;
+  width: 100%;
+}
+.animatr-modal__table th, .animatr-modal__table td {
+  border: 1px solid #DDDDDD;
+  text-align: left;
+  padding: 8px;
+  text-decoration: none;
+}
+.animatr-modal__table a {
+  text-decoration: none;
+  color: #0A1172;
+}
+.animatr-modal__table-list {
+  width: 100%;
+}
+.animatr-modal__download-repo {
+  padding: 8px;
+}
+
+@keyframes hide-modal {
+  0% {
+    opacity: 1;
+    visibility: visible;
+  }
+  100% {
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+
+/*# sourceMappingURL=modal.css.map */

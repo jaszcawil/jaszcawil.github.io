@@ -1,0 +1,111 @@
+/**
+ *
+ * fade-in class
+ *
+*/
+.jaszanimatr__fade-in {
+  animation: fade-in-center 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+
+  &.jaszanimatr__direction--center {
+    animation-name: fade-in-center;
+  }
+
+  &.jaszanimatr__direction--top {
+    animation-name: fade-in-top;
+  }
+
+  &.jaszanimatr__direction--right {
+    animation-name: fade-in-right;
+  }
+
+  &.jaszanimatr__direction--bottom {
+    animation-name: fade-in-bottom;
+  }
+
+  &.jaszanimatr__direction--left {
+    animation-name: fade-in-left;
+  }
+}
+
+/**
+ *
+ * animation fade-in-center
+ *
+*/
+@keyframes fade-in-center {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+/**
+ *
+ * animation fade-in-top
+ *
+*/
+@keyframes fade-in-top {
+  0% {
+    transform: translateY(-50px);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+/**
+ *
+ * animation fade-in-right
+ *
+ */
+@keyframes fade-in-right {
+  0% {
+    transform: translateX(50px);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+/**
+ *
+ * animation fade-in-bottom
+ *
+ */
+@keyframes fade-in-bottom {
+  0% {
+    transform: translateY(50px);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+/**
+ *
+ * animation fade-in-left
+ *
+ */
+@keyframes fade-in-left {
+  0% {
+    transform: translateX(-50px);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}

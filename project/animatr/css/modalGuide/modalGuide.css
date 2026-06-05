@@ -1,0 +1,45 @@
+.m-guide .hide-guide {
+  display: none;
+  max-height: 60vh;
+  padding-right: 10px;
+}
+.m-guide .scrollable-guide {
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+.m-guide .guide-title {
+  font-size: 20px;
+  color: #333333;
+  text-align: center;
+}
+.m-guide .article-guide {
+  margin: 10px 0 30px 0;
+}
+.m-guide .show-guide {
+  display: block;
+}
+.m-guide .tag-box-scrollable {
+  overflow-y: hidden;
+  overflow-x: auto;
+}
+.m-guide .tag-box {
+  color: #FFFFFF;
+  background-color: #000000;
+  padding: 10px;
+}
+.m-guide .html-tag {
+  color: #19C0D0;
+}
+.m-guide .html-content,
+.m-guide .html-equals {
+  color: #FFFFFF;
+}
+.m-guide .html-class {
+  color: #DEB887;
+}
+.m-guide .html-classname {
+  color: #9CCF05;
+}
+.m-guide .html-indent {
+  padding-left: 20px;
+}/*# sourceMappingURL=modalGuide.css.map */

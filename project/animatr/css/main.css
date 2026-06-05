@@ -1,0 +1,78 @@
+.animatr main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 80%;
+}
+.animatr-output {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 720px;
+  max-height: 720px;
+  padding: 16px;
+  background-color: #FFFFFF;
+}
+.animatr-tag {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 200px;
+  height: 200px;
+  margin-bottom: 16px;
+  padding: 8px;
+  text-align: center;
+  border: 1px solid #004377;
+  border-radius: 4px;
+}
+.animatr__selected-tag {
+  text-align: center;
+}
+.animatr__selected-tag--box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  background-color: #2e2e2e;
+  color: #FFFFFF;
+  border-radius: 4px;
+}
+.animatr__selected-tag--text {
+  background-color: transparent;
+}
+.animatr__text-tracking-selected .animatr-options__direction--right, .animatr__text-tracking-selected .animatr-options__direction--left {
+  display: none;
+}
+.animatr__slide-selected .animatr-options__direction--center {
+  display: none;
+}
+.animatr__text-focus-selected .animatr-options__direction--top, .animatr__text-focus-selected .animatr-options__direction--right, .animatr__text-focus-selected .animatr-options__direction--bottom, .animatr__text-focus-selected .animatr-options__direction--left, .animatr__text-blur-selected .animatr-options__direction--top, .animatr__text-blur-selected .animatr-options__direction--right, .animatr__text-blur-selected .animatr-options__direction--bottom, .animatr__text-blur-selected .animatr-options__direction--left {
+  display: none;
+}
+.animatr-output__top {
+  text-align: center;
+}
+.animatr-output__bottom {
+  display: flex;
+  margin-top: 16px;
+  text-align: center;
+  border-top: 1px solid #b3b3b3;
+}
+.animatr-output__bottom-box {
+  width: 50%;
+  padding-top: 16px;
+}
+.animatr-output__bottom-box:first-child {
+  margin-right: 16px;
+  padding-right: 16px;
+  border-right: 1px solid #b3b3b3;
+}
+.animatr-textarea {
+  width: 100%;
+  height: 200px;
+  padding: 16px;
+  resize: none;
+  margin-bottom: 16px;
+}

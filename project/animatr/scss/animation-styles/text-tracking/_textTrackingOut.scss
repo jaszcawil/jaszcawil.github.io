@@ -1,0 +1,90 @@
+/**
+ *
+ * text-tracking-out class
+ *
+*/
+.jaszanimatr__text-tracking-out {
+  animation: text-tracking-out-center 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+
+  &.jaszanimatr__direction--center {
+    animation-name: text-tracking-out-center;
+  }
+
+  &.jaszanimatr__direction--top {
+    animation-name: text-tracking-out-top;
+  }
+
+  &.jaszanimatr__direction--bottom {
+    animation-name: text-tracking-out-bottom;
+  }
+}
+
+/**
+ *
+ * animation text-tracking-out-center
+ *
+*/
+@keyframes text-tracking-out-center {
+  0% {
+    opacity: 1;
+    visibility: visible;
+  }
+
+  50% {
+    opacity: 1;
+  }
+
+  100% {
+    letter-spacing: -0.5em;
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+
+/**
+ *
+ * animation text-tracking-out-top
+ *
+*/
+@keyframes text-tracking-out-top {
+  0% {
+    transform: translateZ(0) translateY(0);
+    opacity: 1;
+    visibility: visible;
+  }
+
+  60% {
+    opacity: 1;
+  }
+
+  100% {
+    letter-spacing: -0.5em;
+    transform: translateZ(-100px) translateY(-100px);
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+
+/**
+ *
+ * animation text-tracking-out-bottom
+ *
+ */
+@keyframes text-tracking-out-bottom {
+  0% {
+    transform: translateZ(0) translateY(0);
+    opacity: 1;
+    visibility: visible;
+  }
+
+  60% {
+    opacity: 1;
+  }
+
+  100% {
+    letter-spacing: -0.5em;
+    transform: translateZ(100px) translateY(100px);
+    opacity: 0;
+    visibility: hidden;
+  }
+}

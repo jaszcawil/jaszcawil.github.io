@@ -1,0 +1,58 @@
+.m-guide {
+  .hide-guide {
+    display: none;
+    max-height: 60vh;
+    padding-right: 10px;
+  }
+
+  .scrollable-guide {
+    overflow-x: hidden;
+    overflow-y: auto;
+  }
+
+  .guide-title {
+    font-size: 20px;
+    color: #333333;
+    text-align: center;
+  }
+
+  .article-guide {
+    margin: 10px 0 30px 0;
+  }
+
+  .show-guide {
+    display: block;
+  }
+
+  .tag-box-scrollable {
+    overflow-y: hidden;
+    overflow-x: auto;
+  }
+
+  .tag-box {
+    color: #FFFFFF;
+    background-color: #000000;
+    padding: 10px;
+  }
+
+  .html-tag {
+    color: #19C0D0;
+  }
+
+  .html-content,
+  .html-equals {
+    color: #FFFFFF;
+  }
+
+  .html-class {
+    color: #DEB887;
+  }
+
+  .html-classname {
+    color: #9CCF05;
+  }
+
+  .html-indent {
+    padding-left: 20px;
+  }
+}
