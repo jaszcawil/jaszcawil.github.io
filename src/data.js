@@ -45,6 +45,17 @@ export const SKILL_DEFS = [
 export const JOBS = [
   {
     id: 'job1',
+    role: 'Web Developer',
+    company: 'Langley Compass Group',
+    dates: 'August 2026 – Present',
+    bullets: [
+      'Development and maintenance of company websites.',
+      'Development and maintenance of company web applications.',
+    ],
+    stack: ['WordPress', 'HTML', 'CSS', 'JavaScript', 'SEO', 'C#', '.NET', 'Blazor', 'SQL', 'Git',],
+  },
+  {
+    id: 'job2',
     role: 'Front-end Web Developer',
     company: 'KMC MAG Solutions Inc.',
     dates: 'Jun 2023 – Feb 2026',
@@ -56,7 +67,7 @@ export const JOBS = [
     stack: ['HTML', 'CSS', 'JavaScript', 'jQuery', 'API', 'SEO', 'Figma', 'Git'],
   },
   {
-    id: 'job2',
+    id: 'job3',
     role: 'Senior UI/UX Developer',
     company: 'Cafe24 Philippines',
     dates: 'Feb 2014 – May 2023',
@@ -69,7 +80,7 @@ export const JOBS = [
     stack: ['HTML', 'CSS', 'SCSS', 'JavaScript', 'jQuery', 'WordPress', 'Photoshop', 'Git'],
   },
   {
-    id: 'job3',
+    id: 'job4',
     role: 'Web Developer (Freelance)',
     company: 'Music Gear Distribution',
     dates: 'Feb 2019 – Apr 2025',
@@ -77,7 +88,7 @@ export const JOBS = [
     stack: ['HTML', 'CSS', 'JavaScript', 'jQuery', 'WordPress', 'Elementor', 'WooCommerce'],
   },
   {
-    id: 'job4',
+    id: 'job5',
     role: 'Web Developer (Freelance)',
     company: 'ATOM PH',
     dates: 'Jan 2020 – Mar 2021',
@@ -85,7 +96,7 @@ export const JOBS = [
     stack: ['HTML', 'CSS', 'JavaScript', 'jQuery', 'WordPress', 'Elementor', 'WooCommerce'],
   },
   {
-    id: 'job5',
+    id: 'job6',
     role: 'Web Developer',
     company: 'HIDRetrofit',
     dates: 'Jan 2013 – Feb 2014',
