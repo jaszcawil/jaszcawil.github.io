@@ -52,7 +52,7 @@ export const JOBS = [
       'Development and maintenance of company websites.',
       'Development and maintenance of company web applications.',
     ],
-    stack: ['WordPress', 'HTML', 'CSS', 'JavaScript', 'SEO', 'C#', '.NET', 'Blazor', 'SQL', 'Git',],
+    stack: ['WordPress', 'HTML', 'CSS', 'JavaScript', 'SEO', 'C#', '.NET', 'Blazor', 'SQL', 'Git'],
   },
   {
     id: 'job2',
